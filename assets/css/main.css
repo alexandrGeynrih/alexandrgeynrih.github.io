@@ -654,11 +654,24 @@ a {
   width: 85px;
   transition: width 0.2s linear;
   padding-left: 25px;
+  z-index: 2;
 }
 @media (max-width: 980px) {
   .search-line__form {
     transition: none;
   }
+}
+.search-line__form:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0%;
+  position: absolute;
+  z-index: -2;
+  background: linear-gradient(91deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.5) 100%);
+  filter: blur(5px);
 }
 
 .search-line__active .search-line__form {
