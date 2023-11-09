@@ -1,0 +1,29 @@
+//Base
+@import './base/reset';
+@import './base/vars';
+@import './base/base';
+
+//Fonts
+@import './base/fonts';
+
+
+//Blocks
+@import './blocks/text';
+@import './blocks/form';
+@import './blocks/header';
+@import './blocks/buttons';
+@import './blocks/header_menu';
+@import './blocks/header_additional';
+@import './blocks/search_line';
+@import './blocks/languages';
+@import './blocks/login';
+@import './blocks/tabs_menu';
+@import './blocks/main_banner';
+@import './blocks/dashboard_list';
+@import './blocks/subscribe';
+@import './blocks/footer';
+@import './blocks/modal';
+@import './blocks/modal_popup';
+@import './blocks/modal_form';
+@import './blocks/burger_menu';
+

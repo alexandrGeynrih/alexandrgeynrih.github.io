@@ -1,0 +1,97 @@
+.search-line {
+    position: relative;
+    min-width: 85px;
+    padding-top: 2px;
+    padding-left: 2px;
+}
+
+.search-line__btn {
+    width: 24px;
+    height: 24px;
+    background: url('../images/search.png') 0px 0px no-repeat;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+.search-line__input {    
+    height: 24px;    
+    font-weight: 400;
+    font-size: 14px;
+    padding: 0px 1px;
+    display: none;
+
+    @media (max-width: $tablet-screen) {
+        transition: none;
+    }
+}
+
+.search-line__form {
+    position: absolute;
+    right: 0px;
+    top: 3px;
+    width: 85px;    
+    transition: width .2s linear;
+    padding-left: 25px;
+    
+    @media (max-width: $tablet-screen) {
+        transition: none;        
+    }
+}
+
+
+.search-line__active .search-line__form {
+    width: 180px;    
+}
+
+.search-line__placeholder {
+    font-weight: 700;
+    font-size: 14px;
+    color: $main-text-color;
+    display: block;
+    position: absolute;
+    left: 31px;
+    top: 0px;
+}
+
+.search-line__active .search-line__input {
+    display: inline-block;
+}
+
+.search-line__active .search-line__placeholder {
+    display: none;
+}
+
+.search-line__active .search-line__input_small {
+    width: 150px;
+}
+
+.search-line__active .search-line__close-btn {
+    display: block;
+}
+
+.search-line__close-btn {
+    position: absolute;
+    display: none;
+    top: 5px;
+    right: -15px;
+    width: 10px;
+    height: 10px;
+
+    &::after,
+    &::before {
+        content: '';
+        display: block;
+        width: 2px;
+        height: 10px;
+        background-color: $main-text-color;
+        position: absolute;
+        left: 4px;
+        top: 0px;
+        transform: rotate(-45deg);
+    }
+
+    &::before {
+        transform: rotate(45deg);
+    }
+}

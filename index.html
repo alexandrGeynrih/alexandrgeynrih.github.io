@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./assets/css/main.css" rel="stylesheet" />
+    <title>DataCell</title>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <div class="header__container container">
+                <div class="header__top">
+                    <div class="header__logo">
+                        <a href="/" class="logo"><img src="./assets/images/logo.png" alt="DataCell"></a>
+                    </div>
+                    <div class="header__top-btn">
+                        <a href="#!" class="btn" data-modal="contacts-form">Contact Us<span class="btn-tangle"></span></a>
+                        <a href="#!" class="btn btn_active" data-modal="contacts-form">Get Started</a>
+                    </div>
+                    <div class="header__burger">
+                        <div class="burger-menu-btn"></div>
+                    </div>
+                </div>
+                <div class="header__bottom">
+                    <div class="header-menu">
+                        <div class="header-menu__item">
+                            <a href="#!" class="header-menu__link">About</a>
+                            <div class="header-submenu">
+                                <div class="header-submenu__list">
+                                    <div class="header-submenu__item">
+                                        <a href="#!" class="header-submenu__link">TMR</a>
+                                    </div>
+                                    <div class="header-submenu__item">
+                                        <a href="#!" class="header-submenu__link">Pricing</a>
+                                    </div>
+                                    <div class="header-submenu__item">
+                                        <a href="#!" class="header-submenu__link">SP&I</a>
+                                    </div>
+                                    <div class="header-submenu__item">
+                                        <a href="#!" class="header-submenu__link">Supply Chain</a>
+                                    </div>
+                                    <div class="header-submenu__item">
+                                        <a href="#!" class="header-submenu__link">NGP</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header-menu__item header-menu__item_active">
+                            <a href="#!" class="header-menu__link">BI Reporting</a>
+                            <div class="header-submenu">
+                                <div class="header-submenu__list">
+                                    <div class="header-submenu__item">
+                                        <a href="#!" class="header-submenu__link">TMR</a>
+                                    </div>
+                                    <div class="header-submenu__item">
+                                        <a href="#!" class="header-submenu__link">Pricing</a>
+                                    </div>
+                                    <div class="header-submenu__item">
+                                        <a href="#!" class="header-submenu__link">SP&I</a>
+                                    </div>
+                                    <div class="header-submenu__item">
+                                        <a href="#!" class="header-submenu__link">Supply Chain</a>
+                                    </div>
+                                    <div class="header-submenu__item">
+                                        <a href="#!" class="header-submenu__link">NGP</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header-menu__item">
+                            <a href="#!" class="header-menu__link">Data Governance</a>
+                            <div class="header-submenu">
+                                <div class="header-submenu__list">
+                                    <div class="header-submenu__item">
+                                        <a href="#!" class="header-submenu__link">TMR</a>
+                                    </div>
+                                    <div class="header-submenu__item">
+                                        <a href="#!" class="header-submenu__link">Pricing</a>
+                                    </div>
+                                    <div class="header-submenu__item">
+                                        <a href="#!" class="header-submenu__link">SP&I</a>
+                                    </div>
+                                    <div class="header-submenu__item">
+                                        <a href="#!" class="header-submenu__link">Supply Chain</a>
+                                    </div>
+                                    <div class="header-submenu__item">
+                                        <a href="#!" class="header-submenu__link">NGP</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header-menu__item">
+                            <a href="#!" class="header-menu__link">Data Governance</a>
+                        </div>
+                        <div class="header-menu__item">
+                            <a href="#!" class="header-menu__link">Instructions</a>
+                        </div>
+                        <div class="header-menu__item">
+                            <a href="#!" class="header-menu__link">Team</a>
+                        </div>
+                    </div>
+
+                    <div class="header-additional">
+                        <div class="search-line">
+                            <form class="search-line__form">
+                                <button class="search-line__btn"></button>
+                                <div class="search-line__placeholder">Search</div>
+                                <input type="text" class="search-line__input" name="search" placeholder="Search" />
+                                <button type="reset" class="search-line__close-btn"></button>
+                            </form>
+                        </div>
+                        <div class="languages">
+                            <div class="languages__selected">English</div>
+                            <div class="languages__selector">
+                                <div class="languages__list">
+                                    <a href="#!" class="languages__item">中文</a>
+                                    <a href="#!" class="languages__item">English</a>
+                                    <a href="#!" class="languages__item">Русский</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="login">
+                            Log In
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="burger-menu">
+            <div class="burger-menu__top container">
+                <a href="/" class="logo burger-menu__logo"><img src="./assets/images/logo.png" alt="DataCell"></a>
+                <div class="burger-menu-btn burger-menu__btn burger-menu-btn_open"></div>
+            </div>
+
+            <div class="burger-menu__additional">
+                <div class="burger-menu__additional-container container">
+                    <div class="search-line burger-menu__search-line">
+                        <form class="search-line__form burger-menu__search-form">
+                            <button class="search-line__btn"></button>
+                            <div class="search-line__placeholder">Search</div>
+                            <input type="text" class="search-line__input" name="search" placeholder="Search" />
+                            <button type="reset" class="search-line__close-btn"></button>
+                        </form>
+                    </div>
+                    <div class="languages">
+                        <div class="languages__selected">English</div>
+                        <div class="languages__selector">
+                            <div class="languages__list">
+                                <a href="#!" class="languages__item">中文</a>
+                                <a href="#!" class="languages__item">English</a>
+                                <a href="#!" class="languages__item">Русский</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="login">
+                        Log In
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="burger-menu__menu-list">
+                    <div class="burger-menu__menu-item">
+                        <a href="#!" class="burger-menu__link">About</a>
+                    </div>
+                    <div class="burger-menu__menu-item">
+                        <a href="#!" class="burger-menu__link">BI Reporting</a>
+                    </div>
+                    <div class="burger-menu__menu-item">
+                        <a href="#!" class="burger-menu__link">Data Governance</a>
+                    </div>
+                    <div class="burger-menu__menu-item">
+                        <a href="#!" class="burger-menu__link">Data Governance</a>
+                    </div>
+                    <div class="burger-menu__menu-item">
+                        <a href="#!" class="burger-menu__link">Instructions</a>
+                    </div>
+                    <div class="burger-menu__menu-item">
+                        <a href="#!" class="burger-menu__link">Team</a>
+                    </div>
+                </div>                
+            </div>
+            <div class="burger-menu__buttom-btn container">
+                <a href="#!" class="btn" data-modal="contacts-form">Contact Us <span class="btn-tangle"></span></a>
+                <a href="#!" class="btn btn_active">Get Started</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+            <section class="tabs-menu">
+                <div class="tabs-memu__item tabs-memu__item_active">TMR</div>
+                <div class="tabs-memu__item">Pricing</div>
+                <div class="tabs-memu__item">SP&I</div>
+                <div class="tabs-memu__item">Supply Chain</div>
+                <div class="tabs-memu__item">NGP</div>
+                <div class="tabs-memu__item">Disgribution</div>
+                <div class="tabs-memu__item">KA</div>
+                <div class="tabs-memu__item">Sales Planning</div>
+                <div class="tabs-memu__item">CORP</div>
+            </section>
+
+            <section class="main-banner">
+                <img src="./assets/images_blocks/main_banner.png" class="main-banner__img" />
+            </section>
+
+            <section class="content-text">
+                <div class="text">
+                    <h1 class="header-text header-text_h1">First Level Headline</h1>
+                    <p>A large population, strategic location, considerable technical talent pool, access to the world’s
+                        best commodity resources and high growth potential are factors that make Russia an attractive
+                        place for foreign companies to do business.</p>
+                    <p>Our support service is ready to answer any of your questions, with 24/7 assistance available for
+                        extended plan users.</p>
+                    <p>If you need a turnkey IT project, we can help you get the assistance you need from one of our
+                        trusted partners, whatever your goal may be: migrating to the cloud, creating an online store
+                        from scratch, or developing unique digital solutions using ML.</p>
+                </div>
+
+                <div class="text">
+                    <h2 class="header-text header-text_h2">Second Level Headline</h2>
+                    <p>A large population, strategic location, considerable technical talent pool, access to the world’s
+                        best commodity resources and high growth potential are factors that make Russia an attractive
+                        place for foreign companies to do business.</p>
+                    <p>Our support service is ready to answer any of your questions, with 24/7 assistance available for
+                        extended plan users.</p>
+                </div>
+
+                <div class="text">
+                    <h3 class="header-text header-text_h3">Third Level Headline</h3>
+                    <p>A large population, strategic location, considerable technical talent pool, access to the world’s
+                        best commodity resources and high growth potential are factors that make Russia an attractive
+                        place for foreign companies to do business.</p>
+                    <ul type="circle">
+                        <li>TMR Trade KPI Dashboard</li>
+                        <li>TMR Contract Dashboard</li>
+                        <li>TMR Bonus Volume KPI</li>
+                        <li>CM RM Join Check Tour One Page</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section>
+                <div class="dashboard-list">
+                    <div class="dashboard-list__item">
+                        <div class="dashboard-list__left dashboard-list__image-lock">
+                            <img src="./assets/images_blocks/TMR_Trade_KPI.jpg" class="dashboard-list__image" />
+                            <div class="ashboard-list__lock"></div>
+                        </div>
+                        <div class="dashboard-list__right">
+                            <div class="dashboard-list__title">TMR Trade KPI Dashboard</div>
+                            <div class="dashboard-list__text">A large population, strategic location, considerable
+                                technical
+                                talent pool, access to the world’s best commodity resources and high growth potential
+                                are
+                                factors that make Russia an attractive place for foreign companies to do business.</div>
+                            <div class="dashboard-list__btn-list">
+                                <a href="#!" class="btn btn_active dashboard-list__btn">Unlock dashboard</a>
+                                <a href="#!" class="btn dashboard-list__btn">About service<span class="btn-tangle"></span></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="dashboard-list__item">
+                        <div class="dashboard-list__left dashboard-list__image-lock">
+                            <img src="./assets/images_blocks/TMR_Contract.png" class="dashboard-list__image" />
+                            <div class="ashboard-list__lock"></div>
+                        </div>
+                        <div class="dashboard-list__right">
+                            <div class="dashboard-list__title">TMR Contract Dashboard</div>
+                            <div class="dashboard-list__text">Our support service is ready to answer any of your
+                                questions,
+                                with 24/7 assistance available for extended plan users.</div>
+                            <div class="dashboard-list__btn-list">
+                                <a href="#!" class="btn btn_active dashboard-list__btn">Unlock dashboard</a>
+                                <a href="#!" class="btn dashboard-list__btn">About service<span class="btn-tangle"></span></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="dashboard-list__item">
+                        <div class="dashboard-list__left dashboard-list__image-lock">
+                            <img src="./assets/images_blocks/TMR_Bonus.png" class="dashboard-list__image" />
+                            <div class="ashboard-list__lock"></div>
+                        </div>
+                        <div class="dashboard-list__right">
+                            <div class="dashboard-list__title">TMR Bonus Volume KPI</div>
+                            <div class="dashboard-list__text">A large population, strategic location, considerable
+                                technical
+                                talent pool, access to the world’s best commodity resources and high growth potential
+                                are
+                                factors that make Russia an attractive place for foreign companies to do business.</div>
+                            <div class="dashboard-list__btn-list">
+                                <a href="#!" class="btn btn_active dashboard-list__btn">Unlock dashboard</a>
+                                <a href="#!" class="btn dashboard-list__btn">About service<span class="btn-tangle"></span></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="dashboard-list__item">
+                        <div class="dashboard-list__left dashboard-list__image-lock">
+                            <img src="./assets/images_blocks/Price Monitoring.png" class="dashboard-list__image" />
+                            <div class="ashboard-list__lock"></div>
+                        </div>
+                        <div class="dashboard-list__right">
+                            <div class="dashboard-list__title">CM RM Join Check Tour One Page</div>
+                            <div class="dashboard-list__text">Our support service is ready to answer any of your
+                                questions,
+                                with 24/7 assistance available for extended plan users.</div>
+                            <div class="dashboard-list__btn-list">
+                                <a href="#!" class="btn btn_active dashboard-list__btn">Unlock dashboard</a>
+                                <a href="#!" class="btn dashboard-list__btn">About service<span class="btn-tangle"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="text">
+                    <p>A large population, strategic location, considerable technical talent pool, access to the world’s
+                        best commodity resources and high growth potential are factors that make Russia an attractive
+                        place for foreign companies to do business.</p>
+                    <p>Our support service is ready to answer any of your questions, with 24/7 assistance available for
+                        extended plan users.</p>
+
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>First</td>
+                                <td>Second</td>
+                                <td>Third</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Item One</td>
+                                <td>Item Two</td>
+                                <td>Item Three</td>
+                            </tr>
+                            <tr>
+                                <td>Item One</td>
+                                <td>Item Two</td>
+                                <td>Item Three</td>
+                            </tr>
+                            <tr>
+                                <td>Item One</td>
+                                <td>Item Two</td>
+                                <td>Item Three</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+
+                    <p>A large population, strategic location, considerable technical talent pool, access to the world’s
+                        best commodity resources and high growth potential are factors that make Russia an attractive
+                        place for foreign companies to do business.</p>
+                    <p>Our support service is ready to answer any of your questions, with 24/7 assistance available for
+                        extended plan users.</p>
+                </div>
+
+            </section>
+
+            <section>
+                <div class="subscribe">
+                    <div class="subscribe__title">
+                        Stay <span class="color-text">in Touch</span>
+                    </div>
+                    <form class="form subscribe__form">
+                        <input class="input subscribe__input" name="email" type="text" placeholder="Email" data-required="email"/>
+                        <button class="subscribe__btn btn btn_active" type="submit">Sent</button>
+                        <div class="subscribe__igree">
+                            <input id="subscribe_igree" type="checkbox" name="subscribe_igree" class="checkbox" data-required="checked" />
+                            <label class="checkbox-label" for="subscribe_igree"></label>
+                            I agree with <a href="!#" class="color-text">Privacy Policy</a>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-wrapp">
+            <div class="container">
+                <div class="footer">
+                    <div class="footer__logo">
+                        <a href="/" class="logo"><img src="./assets/images/logo.png" alt="DataCell"></a>
+                    </div>
+                    <div class="footer-menu">
+                        <div class="footer-main-menu">
+                            <div class="footer-main-menu__item">
+                                <a href="#!" class="footer-main-menu__link">About</a>
+                            </div>
+                            <div class="footer-main-menu__item">
+                                <a href="#!" class="footer-main-menu__link">BI Reporting</a>
+                            </div>
+                            <div class="footer-main-menu__item">
+                                <a href="#!" class="footer-main-menu__link">Data Governance</a>
+                            </div>
+                            <div class="footer-main-menu__item">
+                                <a href="#!" class="footer-main-menu__link">Data Governance</a>
+                            </div>
+                            <div class="footer-main-menu__item">
+                                <a href="#!" class="footer-main-menu__link">Instructions</a>
+                            </div>
+                            <div class="footer-main-menu__item">
+                                <a href="#!" class="footer-main-menu__link">Team</a>
+                            </div>
+                        </div>
+                        <div class="footer-tabs">
+                            <div class="footer-tabs__col">
+                                <div class="footer-tabs__item"><a href="#!" class="footer-tabs__link">TMR</a></div>
+                                <div class="footer-tabs__item"><a href="#!" class="footer-tabs__link">Pricing</a></div>
+                                <div class="footer-tabs__item"><a href="#!" class="footer-tabs__link">SP&I</a></div>
+                                <div class="footer-tabs__item"><a href="#!" class="footer-tabs__link">Supply Chain</a>
+                                </div>
+                            </div>
+                            <div class="footer-tabs__col">
+                                <div class="footer-tabs__item"><a href="#!" class="footer-tabs__link">NGP</a></div>
+                                <div class="footer-tabs__item"><a href="#!" class="footer-tabs__link">Disgribution</a>
+                                </div>
+                                <div class="footer-tabs__item"><a href="#!" class="footer-tabs__link">KA</a></div>
+                                <div class="footer-tabs__item"><a href="#!" class="footer-tabs__link">Sales Planning</a>
+                                </div>
+                                <div class="footer-tabs__item"><a href="#!" class="footer-tabs__link">CORP</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-copyright container">
+                    © Datacell team, 2023
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal">
+        <div class="modal_bg js-close-modal"></div>
+        <div class="modal-popup" id="contacts-form">
+            <div class="modal-popup__head">
+                <h2 class="header-text header-text_h2">Contact Us</h2>
+                <div class="modal-popup__btn-close js-close-modal"></div>
+            </div>
+            <div class="modal-form">
+                <form>
+                    <div class="modal-form__fields">
+                        <div class="modal-form__item">
+                            <label class="modal-form__label">Name</label>
+                            <input class="input modal-form__input" placeholder="Your Name" name="name" />
+                        </div>
+                        <div class="modal-form__item">
+                            <label class="modal-form__label">Email</label>
+                            <input class="input modal-form__input" placeholder="yourmail@mail.ru" name="email" />
+                        </div>
+                        <div class="modal-form__item">
+                            <label class="modal-form__label">Commentary</label>
+                            <textarea class="textarea modal-form__textarea"  placeholder="Text..." name="comment"></textarea>
+                        </div>
+                        <div class="modal-form__item">
+                            <div></div>
+                            <div>
+                                <input id="checkbox_1" type="checkbox" name="igree" class="checkbox" />
+                                <label class="checkbox-label" for="checkbox_1"></label>
+                                I agree with <a href="!#" class="color-text">Privacy Policy</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-form__buttons text-right">
+                        <div class="btn js-close-modal">Cancel<span class="btn-tangle"></span></div>
+                        <button type="submit" class="btn btn_active">Sent</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

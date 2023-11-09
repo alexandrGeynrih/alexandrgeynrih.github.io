@@ -1,0 +1,40 @@
+.tabs-menu {
+    padding: 8px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    gap: 0px;
+    background: rgba(243, 244, 241, 1);
+    width: 100%;
+    overflow: hidden;
+
+    @media (max-width: $tablet-screen) {
+        overflow-x: scroll;
+        flex-wrap: nowrap;
+        scrollbar-width: none;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+}
+
+.tabs-memu__item {
+    padding: 8px 24px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 400;
+    color: $main-text-color;
+    line-height: $main-line-height;
+    transition: color .5s ease-out;
+    white-space: nowrap;
+
+    &:hover {
+        color: $text-hover-color;
+        cursor: pointer;
+    }
+}
+
+.tabs-memu__item_active {
+    background: #fff;
+}

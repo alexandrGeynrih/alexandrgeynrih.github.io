@@ -1,0 +1,25 @@
+.modal-form__fields {
+    padding: 32px 32px 48px 32px;
+}
+
+.modal-form__item {
+    display: grid;
+    grid-template-columns: 126px auto;
+    padding-top: 16px;
+}
+
+.modal-form__label {
+    font-size: 14px;
+    color: $main-text-color;
+}
+
+.modal-form__buttons {
+    border-top: 1px solid $border-color;
+    padding: 24px 32px;
+}
+
+.modal-form__textarea,
+.modal-form__input
+{
+    max-width: 90%;
+}

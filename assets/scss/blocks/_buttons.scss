@@ -1,0 +1,101 @@
+.btn {
+    border: 1px solid $color-1;
+    padding: 7px 23.5px;
+    display: inline-block;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: $main-line-height;
+    color: $main-text-color;
+    position: relative;    
+    vertical-align: middle;
+    cursor: pointer;
+
+    &_active {
+        border: none;
+        color: #fff;
+        padding: 8px 24.5px;
+        border: 0px;
+        overflow: hidden;
+        &:hover {
+            background: none;
+        }
+
+        &:hover::after {
+            transform: rotate(45deg);
+            top: 5px;
+        }
+
+        &:after {
+            content: "";            
+            position: absolute;
+            width: 1100%;
+            height: 1100%;
+            top: 0px;
+            right: -500%;
+            transform-origin: 54% 0;
+            background-color: $color-1;
+            z-index: -2;
+            border: 1px solid $color-1;
+        }
+
+        &:hover::after {
+            background-color: #A9BD0F;
+        }
+    }
+
+    &+& {
+        margin-left: 14px;
+    }
+
+    &:hover {
+        border-top-color: transparent;
+        border-right-color: transparent;
+    }
+
+    &:not(&_active):after {
+        content: "";
+        position: absolute;
+        display: none;
+        bottom: -1px;
+        right: -1px;
+        width: 10px;
+        height: 66%;
+        border-right: 1px solid #B8CE10;
+        border-bottom-right-radius: 8px;
+    }
+
+    &:not(&_active):before {
+        content: "";
+        position: absolute;
+        display: none;
+        top: -1px;
+        left: 0px;
+        width: 90%;
+        height: 100%;
+        border-top: 1px solid #B8CE10;
+        border-top-left-radius: 8px;
+    }
+
+    &:not(&_active):hover:after,
+    &:not(&_active):hover:before {
+        display: block;
+    }
+
+}
+
+
+.btn-tangle {
+    position: absolute;
+    display: none;
+    width: 20px;
+    height: 1px;
+    background-color: #B8CE10;
+    transform: rotate(45deg);
+    top: 6px;
+    right: -3px;
+}
+
+.btn:hover .btn-tangle {
+    display: block;
+}

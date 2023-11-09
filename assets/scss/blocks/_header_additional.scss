@@ -1,0 +1,10 @@
+.header-additional {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 27px;
+    
+    @media (max-width: $tablet-screen) {
+        display: none;
+    }
+}

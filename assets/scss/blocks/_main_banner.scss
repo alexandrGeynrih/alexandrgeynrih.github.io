@@ -1,0 +1,39 @@
+.main-banner {
+    padding-top: 24px;
+    position: relative;
+
+    &::before,
+    &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 183.6px;
+        height: 211px;
+        background: url('../images/polygon.png') 0px 0px no-repeat;
+        background-size: cover;
+        bottom: 130px;
+        right: 60px;
+
+        @media (max-width: $tablet-screen) {
+            width: 81.5px;
+            height: 94px;
+            bottom: 28px;
+            right: 60px;
+        }
+    }
+
+    &::after {
+        bottom: -58px;
+        right: 182.2px;
+
+        @media (max-width: $tablet-screen) {
+            bottom: -53px;
+            right: 110px;
+        }
+    }
+}
+
+.main-banner__img {
+    border-radius: 16px;
+    width: 100%;
+}

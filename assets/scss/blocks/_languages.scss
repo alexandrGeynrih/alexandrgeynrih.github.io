@@ -1,0 +1,62 @@
+.languages {
+    font-size: 0px;
+    position: relative;
+    height: 25px;    
+}
+
+.languages__selected::before {
+    content: "";
+    background: url('../images/language_icon.png') 0px 0px no-repeat;
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+.languages__selected {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 700;
+    vertical-align: middle;
+    padding-top: 2px;
+
+    @media (max-width: $medium-screen) and (min-width: $tablet-screen) {
+        font-size: 0px;
+    }
+}
+
+.languages:hover .languages__selector {
+    display: block;
+}
+
+.languages__selector {
+    display: none;
+    position: absolute;
+    width: 150px;    
+    z-index: 1;
+    left: -12px;
+    top: 0px;
+    padding-top: 34px;
+}
+
+.languages__item {
+    font-size: 14px;
+    font-weight: 400;
+    padding: 4px 12px;
+    color: $main-text-color;
+    display: block;
+    border-radius: 4px;
+    line-height: $main-line-height;
+}
+
+.languages__item:hover {
+    background: rgb(243, 244, 241);
+}
+
+.languages__list {    
+    border: 1px solid rgb(218, 221, 212);
+    padding: 3px;
+    border-radius: 8px;    
+    background: #FFFFFF;    
+}

@@ -1,0 +1,56 @@
+.subscribe {
+    border-radius: 16px;
+    border: 1px solid $border-color;
+    background: url('../images/subscribe_bg.png'), linear-gradient(267deg, rgba(184, 206, 16, 0.20) 0%, rgba(255, 255, 255, 0.00) 100%);
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: contain;
+    width: 100%;
+    padding: 48px;
+    margin-top: 48px;
+
+    @media (max-width: $tablet-screen) {
+        background: url('../images/subscribe_bg_480.png'), linear-gradient(267deg, rgba(184, 206, 16, 0.20) 0%, rgba(255, 255, 255, 0.00) 100%);
+        background-repeat: no-repeat;
+        background-position: right top;
+        background-size: contain;
+    }
+}
+
+.subscribe__title {
+    font-size: 24px;
+    font-weight: 800;
+    line-height: $main-line-height;
+}
+
+.subscribe__form {
+    padding-top: 24px;
+}
+
+.subscribe__input {
+    width: 472px;
+    padding: 8px 16px;
+    background-color: #fff;
+
+    @media (max-width: $tablet-screen) {
+        display: block;
+        width: 100%;
+    }
+}
+
+.subscribe__btn {
+    padding-left: 55.5px;
+    padding-right: 55.5px;
+    margin-left: 12px;
+
+    @media (max-width: $tablet-screen) {
+        display: block;
+        width: 100%;
+        margin-left: 0px;
+        margin-top: 16px;
+    }
+}
+
+.subscribe__igree {
+    margin-top: 16px;
+}

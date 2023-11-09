@@ -1,0 +1,123 @@
+
+.text {
+    padding-top: 48px;
+    color: $article-text-color;    
+    width: 75%;
+
+    @media (max-width: $tablet-screen) {
+        width: 100%;
+    }
+
+    p {
+        padding-top: 20px;
+    }
+
+    ul[type="circle"] {
+        margin-top: 15px;
+    }
+    ul[type="circle"] li {
+        position: relative;
+        padding-left: 25px;
+        
+        &::before{
+            content: '';
+            position: absolute;
+            left: 12.5px;
+            top: 48%;            
+            display: block;
+            width: 2px;
+            height: 2px;
+            background-color: $article-text-color;
+            border-radius: 20px;
+        }
+    }
+
+    table {
+        margin: 48px 0px;
+        border-spacing: 0;
+        width: 100%;
+        thead {
+            background: $border-color;
+            
+            td {
+                font-weight: 700;
+                font-size: 14px;
+                color: $main-text-color;
+
+                &:first-child{
+                    border-top-left-radius: 6px;
+                }
+                
+                &:last-child{
+                    border-top-right-radius: 6px;
+                }
+            }
+        }
+
+        td {
+            padding: 16px 26px;            
+        }
+
+        tr:nth-child(even) {
+            background: #F3F4F1;
+            td {
+                &:first-child{
+                    border-top-left-radius: 6px;
+                    border-bottom-left-radius: 6px;
+                }
+                
+                &:last-child{
+                    border-top-right-radius: 6px;
+                    border-bottom-right-radius: 6px;
+                }
+            }
+            
+        }
+    }
+}
+
+.header-text {
+    font-weight: 800;
+    color: $main-text-color;
+    &::after {
+        content: '.';
+        display: inline;        
+        color: $color-1;        
+    }
+}
+
+.header-text_h1 {
+    font-size: 32px;
+}
+
+.header-text_h2 {
+    font-size: 24px;
+}
+
+.header-text_h3 {
+    font-size: 20px;
+}
+
+.content-text {
+    padding-top: 25px;
+}
+
+.color-text {
+    color: $color-1;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-center {
+    text-align: center;
+}
+
+a {    
+   color: $color-1;    
+}
