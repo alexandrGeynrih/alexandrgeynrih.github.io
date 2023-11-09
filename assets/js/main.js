@@ -1,3 +1,5 @@
+"use strict";
+
 //Search line
 const searchLine = document.querySelectorAll(".search-line");
 searchLine.forEach((item) => {
@@ -28,12 +30,17 @@ document.addEventListener("click", function (event) {
 
 //Tabs
 const tabMenuItemsList = document.querySelectorAll(".tabs-memu__item");
+const tabs = document.querySelectorAll('.tab-content');
+
 tabMenuItemsList.forEach((item) => {
     item.addEventListener("click", function (event) {
-        tabMenuItemsList.forEach((menuItem) => {
-            menuItem.classList.remove('tabs-memu__item_active');
-        });
-        event.target.classList.add("tabs-memu__item_active");
+        event.preventDefault();
+        const link = this.getAttribute("href");
+        if(link) {
+            activateTab (link.replace('#',''));            
+            const refresh = window.location.protocol + "//" + window.location.host + window.location.pathname + link;    
+            window.history.pushState({ path: refresh }, '', refresh);
+        }
     });
 });
 
@@ -60,7 +67,7 @@ window.addEventListener("scroll", scrollHead);
 //Fixed head for scroll page
 function scrollHead(event) {
 
-    if (this.scrollY >= 100) {
+    if (window.scrollY >= 100) {
         document.querySelector(".header").classList.add("header_fixed");
         document.querySelector(".search-line__input").classList.add("search-line__input_small");
     } else {
@@ -72,6 +79,11 @@ function scrollHead(event) {
 // Document ready
 document.addEventListener('DOMContentLoaded', () => {
     scrollHead();
+    setActiveTab();
+    setTimeout(() => {
+        document.querySelector(".loader").classList.remove("loader_active");
+    }, 500);
+
 });
 
 // Burger menu
@@ -110,8 +122,36 @@ forms.forEach((form) => {
     });
 });
 
-const validateEmail = (email) => {
+
+//Check if email valide 
+function validateEmail(email) {
     return email.match(
         /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
     );
 };
+
+// Activate tab after load page
+function setActiveTab() {    
+    const matches = location.hash.match(new RegExp(/tab([0-9])*$/g));
+    const tabId = matches ? matches[0] : null;
+    activateTab(tabId);
+}
+//Activeta tab's content
+function activateTab(tabId){    
+    if (tabId) {
+        if (document.getElementById(tabId)) {
+            tabs.forEach((tab) => {
+                tab.classList.remove('tab-content_active');
+            });
+            document.getElementById(tabId).classList.add('tab-content_active');
+
+            tabMenuItemsList.forEach((tab) => {
+                if( tab.getAttribute('href') === '#'+tabId ) {
+                    tab.classList.add('tabs-memu__item_active');
+                } else{
+                    tab.classList.remove('tabs-memu__item_active');
+                }                
+            });
+        }
+    }
+}

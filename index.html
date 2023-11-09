@@ -10,6 +10,7 @@
 </head>
 
 <body>
+    <div class="loader loader_active"></div>
     <header>
         <div class="header">
             <div class="header__container container">
@@ -18,7 +19,8 @@
                         <a href="/" class="logo"><img src="./assets/images/logo.png" alt="DataCell"></a>
                     </div>
                     <div class="header__top-btn">
-                        <a href="#!" class="btn" data-modal="contacts-form">Contact Us<span class="btn-tangle"></span></a>
+                        <a href="#!" class="btn" data-modal="contacts-form">Contact Us<span
+                                class="btn-tangle"></span></a>
                         <a href="#!" class="btn btn_active" data-modal="contacts-form">Get Started</a>
                     </div>
                     <div class="header__burger">
@@ -184,7 +186,7 @@
                     <div class="burger-menu__menu-item">
                         <a href="#!" class="burger-menu__link">Team</a>
                     </div>
-                </div>                
+                </div>
             </div>
             <div class="burger-menu__buttom-btn container">
                 <a href="#!" class="btn" data-modal="contacts-form">Contact Us <span class="btn-tangle"></span></a>
@@ -196,188 +198,401 @@
     <main class="main-content">
         <div class="container">
             <section class="tabs-menu">
-                <div class="tabs-memu__item tabs-memu__item_active">TMR</div>
-                <div class="tabs-memu__item">Pricing</div>
-                <div class="tabs-memu__item">SP&I</div>
-                <div class="tabs-memu__item">Supply Chain</div>
-                <div class="tabs-memu__item">NGP</div>
-                <div class="tabs-memu__item">Disgribution</div>
-                <div class="tabs-memu__item">KA</div>
-                <div class="tabs-memu__item">Sales Planning</div>
-                <div class="tabs-memu__item">CORP</div>
+                <a href="#tab1" class="tabs-memu__item tabs-memu__item_active">TMR</a>
+                <a href="#tab2" class="tabs-memu__item">Pricing</a>
+                <a href="#tab3" class="tabs-memu__item">SP&I</a>
+                <a href="#tab4" class="tabs-memu__item">Supply Chain</a>
+                <a href="#tab5" class="tabs-memu__item">NGP</a>
+                <a href="#tab6" class="tabs-memu__item">Disgribution</a>
+                <a href="#tab7" class="tabs-memu__item">KA</a>
+                <a href="#tab8" class="tabs-memu__item">Sales Planning</a>
+                <a href="#tab9" class="tabs-memu__item">CORP</a>
             </section>
 
-            <section class="main-banner">
-                <img src="./assets/images_blocks/main_banner.png" class="main-banner__img" />
-            </section>
+            <div class="tab-content tab-content_active" id="tab1">
 
-            <section class="content-text">
-                <div class="text">
-                    <h1 class="header-text header-text_h1">First Level Headline</h1>
-                    <p>A large population, strategic location, considerable technical talent pool, access to the world’s
-                        best commodity resources and high growth potential are factors that make Russia an attractive
-                        place for foreign companies to do business.</p>
-                    <p>Our support service is ready to answer any of your questions, with 24/7 assistance available for
-                        extended plan users.</p>
-                    <p>If you need a turnkey IT project, we can help you get the assistance you need from one of our
-                        trusted partners, whatever your goal may be: migrating to the cloud, creating an online store
-                        from scratch, or developing unique digital solutions using ML.</p>
-                </div>
+                <section class="main-banner">
+                    <img src="./assets/images_blocks/main_banner.png" class="main-banner__img" />
+                </section>
 
-                <div class="text">
-                    <h2 class="header-text header-text_h2">Second Level Headline</h2>
-                    <p>A large population, strategic location, considerable technical talent pool, access to the world’s
-                        best commodity resources and high growth potential are factors that make Russia an attractive
-                        place for foreign companies to do business.</p>
-                    <p>Our support service is ready to answer any of your questions, with 24/7 assistance available for
-                        extended plan users.</p>
-                </div>
+                <section class="content-text">
+                    <div class="text">
+                        <h1 class="header-text header-text_h1">First Level Headline</h1>
+                        <p>A large population, strategic location, considerable technical talent pool, access to the
+                            world’s
+                            best commodity resources and high growth potential are factors that make Russia an
+                            attractive
+                            place for foreign companies to do business.</p>
+                        <p>Our support service is ready to answer any of your questions, with 24/7 assistance available
+                            for
+                            extended plan users.</p>
+                        <p>If you need a turnkey IT project, we can help you get the assistance you need from one of our
+                            trusted partners, whatever your goal may be: migrating to the cloud, creating an online
+                            store
+                            from scratch, or developing unique digital solutions using ML.</p>
+                    </div>
 
-                <div class="text">
-                    <h3 class="header-text header-text_h3">Third Level Headline</h3>
-                    <p>A large population, strategic location, considerable technical talent pool, access to the world’s
-                        best commodity resources and high growth potential are factors that make Russia an attractive
-                        place for foreign companies to do business.</p>
-                    <ul type="circle">
-                        <li>TMR Trade KPI Dashboard</li>
-                        <li>TMR Contract Dashboard</li>
-                        <li>TMR Bonus Volume KPI</li>
-                        <li>CM RM Join Check Tour One Page</li>
-                    </ul>
-                </div>
-            </section>
+                    <div class="text">
+                        <h2 class="header-text header-text_h2">Second Level Headline</h2>
+                        <p>A large population, strategic location, considerable technical talent pool, access to the
+                            world’s
+                            best commodity resources and high growth potential are factors that make Russia an
+                            attractive
+                            place for foreign companies to do business.</p>
+                        <p>Our support service is ready to answer any of your questions, with 24/7 assistance available
+                            for
+                            extended plan users.</p>
+                    </div>
 
-            <section>
-                <div class="dashboard-list">
-                    <div class="dashboard-list__item">
-                        <div class="dashboard-list__left dashboard-list__image-lock">
-                            <img src="./assets/images_blocks/TMR_Trade_KPI.jpg" class="dashboard-list__image" />
-                            <div class="ashboard-list__lock"></div>
+                    <div class="text">
+                        <h3 class="header-text header-text_h3">Third Level Headline</h3>
+                        <p>A large population, strategic location, considerable technical talent pool, access to the
+                            world’s
+                            best commodity resources and high growth potential are factors that make Russia an
+                            attractive
+                            place for foreign companies to do business.</p>
+                        <ul type="circle">
+                            <li>TMR Trade KPI Dashboard</li>
+                            <li>TMR Contract Dashboard</li>
+                            <li>TMR Bonus Volume KPI</li>
+                            <li>CM RM Join Check Tour One Page</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section>
+                    <div class="dashboard-list">
+                        <div class="dashboard-list__item">
+                            <div class="dashboard-list__left dashboard-list__image-lock">
+                                <img src="./assets/images_blocks/TMR_Trade_KPI.jpg" class="dashboard-list__image" />
+                                <div class="ashboard-list__lock"></div>
+                            </div>
+                            <div class="dashboard-list__right">
+                                <div class="dashboard-list__title">TMR Trade KPI Dashboard</div>
+                                <div class="dashboard-list__text">A large population, strategic location, considerable
+                                    technical
+                                    talent pool, access to the world’s best commodity resources and high growth
+                                    potential
+                                    are
+                                    factors that make Russia an attractive place for foreign companies to do business.
+                                </div>
+                                <div class="dashboard-list__btn-list">
+                                    <a href="#!" class="btn btn_active dashboard-list__btn">Unlock dashboard</a>
+                                    <a href="#!" class="btn dashboard-list__btn">About service<span
+                                            class="btn-tangle"></span></a>
+                                </div>
+                            </div>
                         </div>
-                        <div class="dashboard-list__right">
-                            <div class="dashboard-list__title">TMR Trade KPI Dashboard</div>
-                            <div class="dashboard-list__text">A large population, strategic location, considerable
-                                technical
-                                talent pool, access to the world’s best commodity resources and high growth potential
-                                are
-                                factors that make Russia an attractive place for foreign companies to do business.</div>
-                            <div class="dashboard-list__btn-list">
-                                <a href="#!" class="btn btn_active dashboard-list__btn">Unlock dashboard</a>
-                                <a href="#!" class="btn dashboard-list__btn">About service<span class="btn-tangle"></span></a>
+
+                        <div class="dashboard-list__item">
+                            <div class="dashboard-list__left dashboard-list__image-lock">
+                                <img src="./assets/images_blocks/TMR_Contract.png" class="dashboard-list__image" />
+                                <div class="ashboard-list__lock"></div>
+                            </div>
+                            <div class="dashboard-list__right">
+                                <div class="dashboard-list__title">TMR Contract Dashboard</div>
+                                <div class="dashboard-list__text">Our support service is ready to answer any of your
+                                    questions,
+                                    with 24/7 assistance available for extended plan users.</div>
+                                <div class="dashboard-list__btn-list">
+                                    <a href="#!" class="btn btn_active dashboard-list__btn">Unlock dashboard</a>
+                                    <a href="#!" class="btn dashboard-list__btn">About service<span
+                                            class="btn-tangle"></span></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="dashboard-list__item">
+                            <div class="dashboard-list__left dashboard-list__image-lock">
+                                <img src="./assets/images_blocks/TMR_Bonus.png" class="dashboard-list__image" />
+                                <div class="ashboard-list__lock"></div>
+                            </div>
+                            <div class="dashboard-list__right">
+                                <div class="dashboard-list__title">TMR Bonus Volume KPI</div>
+                                <div class="dashboard-list__text">A large population, strategic location, considerable
+                                    technical
+                                    talent pool, access to the world’s best commodity resources and high growth
+                                    potential
+                                    are
+                                    factors that make Russia an attractive place for foreign companies to do business.
+                                </div>
+                                <div class="dashboard-list__btn-list">
+                                    <a href="#!" class="btn btn_active dashboard-list__btn">Unlock dashboard</a>
+                                    <a href="#!" class="btn dashboard-list__btn">About service<span
+                                            class="btn-tangle"></span></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="dashboard-list__item">
+                            <div class="dashboard-list__left dashboard-list__image-lock">
+                                <img src="./assets/images_blocks/Price Monitoring.png" class="dashboard-list__image" />
+                                <div class="ashboard-list__lock"></div>
+                            </div>
+                            <div class="dashboard-list__right">
+                                <div class="dashboard-list__title">CM RM Join Check Tour One Page</div>
+                                <div class="dashboard-list__text">Our support service is ready to answer any of your
+                                    questions,
+                                    with 24/7 assistance available for extended plan users.</div>
+                                <div class="dashboard-list__btn-list">
+                                    <a href="#!" class="btn btn_active dashboard-list__btn">Unlock dashboard</a>
+                                    <a href="#!" class="btn dashboard-list__btn">About service<span
+                                            class="btn-tangle"></span></a>
+                                </div>
                             </div>
                         </div>
                     </div>
+                </section>
 
-                    <div class="dashboard-list__item">
-                        <div class="dashboard-list__left dashboard-list__image-lock">
-                            <img src="./assets/images_blocks/TMR_Contract.png" class="dashboard-list__image" />
-                            <div class="ashboard-list__lock"></div>
+                <section>
+                    <div class="text">
+                        <p>A large population, strategic location, considerable technical talent pool, access to the
+                            world’s
+                            best commodity resources and high growth potential are factors that make Russia an
+                            attractive
+                            place for foreign companies to do business.</p>
+                        <p>Our support service is ready to answer any of your questions, with 24/7 assistance available
+                            for
+                            extended plan users.</p>
+
+                        <table>
+                            <thead>
+                                <tr>
+                                    <td>First</td>
+                                    <td>Second</td>
+                                    <td>Third</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Item One</td>
+                                    <td>Item Two</td>
+                                    <td>Item Three</td>
+                                </tr>
+                                <tr>
+                                    <td>Item One</td>
+                                    <td>Item Two</td>
+                                    <td>Item Three</td>
+                                </tr>
+                                <tr>
+                                    <td>Item One</td>
+                                    <td>Item Two</td>
+                                    <td>Item Three</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+
+                        <p>A large population, strategic location, considerable technical talent pool, access to the
+                            world’s
+                            best commodity resources and high growth potential are factors that make Russia an
+                            attractive
+                            place for foreign companies to do business.</p>
+                        <p>Our support service is ready to answer any of your questions, with 24/7 assistance available
+                            for
+                            extended plan users.</p>
+                    </div>
+
+                </section>
+            </div>
+
+            <div class="tab-content" id="tab2">
+                <section class="main-banner">
+                    <img src="./assets/images_blocks/main_banner.png" class="main-banner__img" />
+                </section>
+
+                <section class="content-text">
+                    <div class="text">
+                        <h1 class="header-text header-text_h1">First Level Headline</h1>
+                        <p>A large population, strategic location, considerable technical talent pool, access to the
+                            world’s
+                            best commodity resources and high growth potential are factors that make Russia an
+                            attractive
+                            place for foreign companies to do business.</p>
+                        <p>Our support service is ready to answer any of your questions, with 24/7 assistance available
+                            for
+                            extended plan users.</p>
+                        <p>If you need a turnkey IT project, we can help you get the assistance you need from one of our
+                            trusted partners, whatever your goal may be: migrating to the cloud, creating an online
+                            store
+                            from scratch, or developing unique digital solutions using ML.</p>
+                    </div>
+
+                    <div class="text">
+                        <h2 class="header-text header-text_h2">Second Level Headline</h2>
+                        <p>A large population, strategic location, considerable technical talent pool, access to the
+                            world’s
+                            best commodity resources and high growth potential are factors that make Russia an
+                            attractive
+                            place for foreign companies to do business.</p>
+                        <p>Our support service is ready to answer any of your questions, with 24/7 assistance available
+                            for
+                            extended plan users.</p>
+                    </div>
+
+                    <div class="text">
+                        <h3 class="header-text header-text_h3">Third Level Headline</h3>
+                        <p>A large population, strategic location, considerable technical talent pool, access to the
+                            world’s
+                            best commodity resources and high growth potential are factors that make Russia an
+                            attractive
+                            place for foreign companies to do business.</p>
+                        <ul type="circle">
+                            <li>TMR Trade KPI Dashboard</li>
+                            <li>TMR Contract Dashboard</li>
+                            <li>TMR Bonus Volume KPI</li>
+                            <li>CM RM Join Check Tour One Page</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section>
+                    <div class="dashboard-list">
+                        <div class="dashboard-list__item">
+                            <div class="dashboard-list__left dashboard-list__image-lock">
+                                <img src="./assets/images_blocks/TMR_Trade_KPI.jpg" class="dashboard-list__image" />
+                                <div class="ashboard-list__lock"></div>
+                            </div>
+                            <div class="dashboard-list__right">
+                                <div class="dashboard-list__title">TMR Trade KPI Dashboard</div>
+                                <div class="dashboard-list__text">A large population, strategic location, considerable
+                                    technical
+                                    talent pool, access to the world’s best commodity resources and high growth
+                                    potential
+                                    are
+                                    factors that make Russia an attractive place for foreign companies to do business.
+                                </div>
+                                <div class="dashboard-list__btn-list">
+                                    <a href="#!" class="btn btn_active dashboard-list__btn">Unlock dashboard</a>
+                                    <a href="#!" class="btn dashboard-list__btn">About service<span
+                                            class="btn-tangle"></span></a>
+                                </div>
+                            </div>
                         </div>
-                        <div class="dashboard-list__right">
-                            <div class="dashboard-list__title">TMR Contract Dashboard</div>
-                            <div class="dashboard-list__text">Our support service is ready to answer any of your
-                                questions,
-                                with 24/7 assistance available for extended plan users.</div>
-                            <div class="dashboard-list__btn-list">
-                                <a href="#!" class="btn btn_active dashboard-list__btn">Unlock dashboard</a>
-                                <a href="#!" class="btn dashboard-list__btn">About service<span class="btn-tangle"></span></a>
+
+                        <div class="dashboard-list__item">
+                            <div class="dashboard-list__left dashboard-list__image-lock">
+                                <img src="./assets/images_blocks/TMR_Contract.png" class="dashboard-list__image" />
+                                <div class="ashboard-list__lock"></div>
+                            </div>
+                            <div class="dashboard-list__right">
+                                <div class="dashboard-list__title">TMR Contract Dashboard</div>
+                                <div class="dashboard-list__text">Our support service is ready to answer any of your
+                                    questions,
+                                    with 24/7 assistance available for extended plan users.</div>
+                                <div class="dashboard-list__btn-list">
+                                    <a href="#!" class="btn btn_active dashboard-list__btn">Unlock dashboard</a>
+                                    <a href="#!" class="btn dashboard-list__btn">About service<span
+                                            class="btn-tangle"></span></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="dashboard-list__item">
+                            <div class="dashboard-list__left dashboard-list__image-lock">
+                                <img src="./assets/images_blocks/TMR_Bonus.png" class="dashboard-list__image" />
+                                <div class="ashboard-list__lock"></div>
+                            </div>
+                            <div class="dashboard-list__right">
+                                <div class="dashboard-list__title">TMR Bonus Volume KPI</div>
+                                <div class="dashboard-list__text">A large population, strategic location, considerable
+                                    technical
+                                    talent pool, access to the world’s best commodity resources and high growth
+                                    potential
+                                    are
+                                    factors that make Russia an attractive place for foreign companies to do business.
+                                </div>
+                                <div class="dashboard-list__btn-list">
+                                    <a href="#!" class="btn btn_active dashboard-list__btn">Unlock dashboard</a>
+                                    <a href="#!" class="btn dashboard-list__btn">About service<span
+                                            class="btn-tangle"></span></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="dashboard-list__item">
+                            <div class="dashboard-list__left dashboard-list__image-lock">
+                                <img src="./assets/images_blocks/Price Monitoring.png" class="dashboard-list__image" />
+                                <div class="ashboard-list__lock"></div>
+                            </div>
+                            <div class="dashboard-list__right">
+                                <div class="dashboard-list__title">CM RM Join Check Tour One Page</div>
+                                <div class="dashboard-list__text">Our support service is ready to answer any of your
+                                    questions,
+                                    with 24/7 assistance available for extended plan users.</div>
+                                <div class="dashboard-list__btn-list">
+                                    <a href="#!" class="btn btn_active dashboard-list__btn">Unlock dashboard</a>
+                                    <a href="#!" class="btn dashboard-list__btn">About service<span
+                                            class="btn-tangle"></span></a>
+                                </div>
                             </div>
                         </div>
                     </div>
+                </section>
 
-                    <div class="dashboard-list__item">
-                        <div class="dashboard-list__left dashboard-list__image-lock">
-                            <img src="./assets/images_blocks/TMR_Bonus.png" class="dashboard-list__image" />
-                            <div class="ashboard-list__lock"></div>
-                        </div>
-                        <div class="dashboard-list__right">
-                            <div class="dashboard-list__title">TMR Bonus Volume KPI</div>
-                            <div class="dashboard-list__text">A large population, strategic location, considerable
-                                technical
-                                talent pool, access to the world’s best commodity resources and high growth potential
-                                are
-                                factors that make Russia an attractive place for foreign companies to do business.</div>
-                            <div class="dashboard-list__btn-list">
-                                <a href="#!" class="btn btn_active dashboard-list__btn">Unlock dashboard</a>
-                                <a href="#!" class="btn dashboard-list__btn">About service<span class="btn-tangle"></span></a>
-                            </div>
-                        </div>
+                <section>
+                    <div class="text">
+                        <p>A large population, strategic location, considerable technical talent pool, access to the
+                            world’s
+                            best commodity resources and high growth potential are factors that make Russia an
+                            attractive
+                            place for foreign companies to do business.</p>
+                        <p>Our support service is ready to answer any of your questions, with 24/7 assistance available
+                            for
+                            extended plan users.</p>
+
+                        <table>
+                            <thead>
+                                <tr>
+                                    <td>First</td>
+                                    <td>Second</td>
+                                    <td>Third</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Item One</td>
+                                    <td>Item Two</td>
+                                    <td>Item Three</td>
+                                </tr>
+                                <tr>
+                                    <td>Item One</td>
+                                    <td>Item Two</td>
+                                    <td>Item Three</td>
+                                </tr>
+                                <tr>
+                                    <td>Item One</td>
+                                    <td>Item Two</td>
+                                    <td>Item Three</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+
+                        <p>A large population, strategic location, considerable technical talent pool, access to the
+                            world’s
+                            best commodity resources and high growth potential are factors that make Russia an
+                            attractive
+                            place for foreign companies to do business.</p>
+                        <p>Our support service is ready to answer any of your questions, with 24/7 assistance available
+                            for
+                            extended plan users.</p>
                     </div>
 
-                    <div class="dashboard-list__item">
-                        <div class="dashboard-list__left dashboard-list__image-lock">
-                            <img src="./assets/images_blocks/Price Monitoring.png" class="dashboard-list__image" />
-                            <div class="ashboard-list__lock"></div>
-                        </div>
-                        <div class="dashboard-list__right">
-                            <div class="dashboard-list__title">CM RM Join Check Tour One Page</div>
-                            <div class="dashboard-list__text">Our support service is ready to answer any of your
-                                questions,
-                                with 24/7 assistance available for extended plan users.</div>
-                            <div class="dashboard-list__btn-list">
-                                <a href="#!" class="btn btn_active dashboard-list__btn">Unlock dashboard</a>
-                                <a href="#!" class="btn dashboard-list__btn">About service<span class="btn-tangle"></span></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section>
-                <div class="text">
-                    <p>A large population, strategic location, considerable technical talent pool, access to the world’s
-                        best commodity resources and high growth potential are factors that make Russia an attractive
-                        place for foreign companies to do business.</p>
-                    <p>Our support service is ready to answer any of your questions, with 24/7 assistance available for
-                        extended plan users.</p>
-
-                    <table>
-                        <thead>
-                            <tr>
-                                <td>First</td>
-                                <td>Second</td>
-                                <td>Third</td>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Item One</td>
-                                <td>Item Two</td>
-                                <td>Item Three</td>
-                            </tr>
-                            <tr>
-                                <td>Item One</td>
-                                <td>Item Two</td>
-                                <td>Item Three</td>
-                            </tr>
-                            <tr>
-                                <td>Item One</td>
-                                <td>Item Two</td>
-                                <td>Item Three</td>
-                            </tr>
-                        </tbody>
-                    </table>
-
-
-                    <p>A large population, strategic location, considerable technical talent pool, access to the world’s
-                        best commodity resources and high growth potential are factors that make Russia an attractive
-                        place for foreign companies to do business.</p>
-                    <p>Our support service is ready to answer any of your questions, with 24/7 assistance available for
-                        extended plan users.</p>
-                </div>
-
-            </section>
-
+                </section>
+            </div>
             <section>
                 <div class="subscribe">
                     <div class="subscribe__title">
                         Stay <span class="color-text">in Touch</span>
                     </div>
                     <form class="form subscribe__form">
-                        <input class="input subscribe__input" name="email" type="text" placeholder="Email" data-required="email"/>
+                        <input class="input subscribe__input" name="email" type="text" placeholder="Email"
+                            data-required="email" />
                         <button class="subscribe__btn btn btn_active" type="submit">Sent</button>
                         <div class="subscribe__igree">
-                            <input id="subscribe_igree" type="checkbox" name="subscribe_igree" class="checkbox" data-required="checked" />
+                            <input id="subscribe_igree" type="checkbox" name="subscribe_igree" class="checkbox"
+                                data-required="checked" />
                             <label class="checkbox-label" for="subscribe_igree"></label>
                             I agree with <a href="!#" class="color-text">Privacy Policy</a>
                         </div>
@@ -461,7 +676,8 @@
                         </div>
                         <div class="modal-form__item">
                             <label class="modal-form__label">Commentary</label>
-                            <textarea class="textarea modal-form__textarea"  placeholder="Text..." name="comment"></textarea>
+                            <textarea class="textarea modal-form__textarea" placeholder="Text..."
+                                name="comment"></textarea>
                         </div>
                         <div class="modal-form__item">
                             <div></div>
