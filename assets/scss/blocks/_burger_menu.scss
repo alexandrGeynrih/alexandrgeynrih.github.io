@@ -96,7 +96,7 @@
 
 .burger-menu__menu-list {
     padding: 24px 0px;
-    height: 80vw;
+    height: 65vh;
     overflow-y: scroll;
 }
 
@@ -140,5 +140,9 @@
     .search-line__active .burger-menu__search-form {
         left: 0px;
         width: 300px;        
+    }
+
+    .burger-menu__search-form::before {
+        display: none;
     }
 }
