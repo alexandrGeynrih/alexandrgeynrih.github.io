@@ -14,8 +14,8 @@
     top: 0px;
 }
 
-.search-line__input {    
-    height: 24px;    
+.search-line__input {
+    height: 24px;
     font-weight: 400;
     font-size: 14px;
     padding: 0px 1px;
@@ -30,12 +30,13 @@
     position: absolute;
     right: 0px;
     top: 3px;
-    width: 85px;    
+    width: 85px;
     transition: width .2s linear;
     padding-left: 25px;
     z-index: 2;
+
     @media (max-width: $tablet-screen) {
-        transition: none;        
+        transition: none;
     }
 
     &:before {
@@ -44,17 +45,17 @@
         width: 100%;
         height: 100%;
         top: 0px;
-        left: 0%;        
+        left: 0%;
         position: absolute;
-        z-index: -2;        
-        background: linear-gradient(91deg, rgba(255, 255, 255, 0.80) 0%, rgba(255, 255, 255, 0.50) 100%);
-        filter: blur(5px);        
+        z-index: -2;
+        background: linear-gradient(91deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.9) 100%);
+        filter: blur(5px);
     }
 }
 
 
 .search-line__active .search-line__form {
-    width: 180px;    
+    width: 180px;
 }
 
 .search-line__placeholder {
