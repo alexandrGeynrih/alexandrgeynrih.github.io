@@ -45,12 +45,15 @@
     display: block;
     position: absolute;
     z-index: 1;
-    bottom: -17px;
+    bottom: -18px;
     width: 100%;
     height: 4px;
     border-radius: 4px 4px 0px 0px;
     background-color: rgb(184, 206, 16);
     box-shadow: 1px 1px 18px 0px rgb(184 206 16 / 51%);
+    @media (max-width: $tablet-screen) {
+        bottom: -16px;
+    }
 }
 
 .header-submenu {
@@ -71,7 +74,9 @@
 
 .header-menu__item:hover .header-submenu {
     display: block;
-
+    @media (max-width: $tablet-screen) {
+        display: none;
+    }
 }
 
 .header-submenu__link {
@@ -89,7 +94,8 @@
 .header-submenu__item {
     padding: 5px 12px;
     border-radius: 4px;
+
     &:hover {
-        background: #F3F4F1;        
+        background: #F3F4F1;
     }
 }
