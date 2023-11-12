@@ -98,6 +98,7 @@
     padding: 24px 0px;
     height: 65vh;
     overflow-y: scroll;
+    padding-bottom: 80px;
 }
 
 .burger-menu__menu-item {
@@ -115,6 +116,8 @@
     flex-direction: row;
     justify-content: space-around;
     width: 100%;
+    position: absolute;
+    bottom: 48px;
 }
 
 .burger-menu__buttom-btn .btn {

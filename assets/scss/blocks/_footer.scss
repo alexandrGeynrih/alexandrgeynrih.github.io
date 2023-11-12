@@ -72,6 +72,10 @@
     font-size: 14px;
     line-height: $main-font;
     color: $main-text-color;
+    transition: color .2s ease-out;
+    &:hover {
+        color: $text-hover-color;
+    }
 }
 
 .footer-tabs__item {
@@ -83,7 +87,7 @@
     font-size: 14px;
     line-height: $main-font;
     color: $article-text-color;
-    transition: color .5s ease-out;
+    transition: color .2s ease-out;
 
     &:hover {
         color: $text-hover-color;

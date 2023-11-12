@@ -17,7 +17,8 @@
         padding: 8px 24.5px;
         border: 0px;
         overflow: hidden;
-        &:hover {
+        background-color: $color-1;
+       /* &:hover {
             background: none;
         }
 
@@ -41,13 +42,13 @@
 
         &:hover::after {
             background-color: #A9BD0F;
-        }
+        }*/
     }
 
     &+& {
         margin-left: 14px;
     }
-
+    /*
     &:hover {
         border-top-color: transparent;
         border-right-color: transparent;
@@ -80,10 +81,10 @@
     &:not(&_active):hover:after,
     &:not(&_active):hover:before {
         display: block;
-    }
+    }*/
 
 }
-
+/*
 
 .btn-tangle {
     position: absolute;
@@ -98,4 +99,4 @@
 
 .btn:hover .btn-tangle {
     display: block;
-}
+}*/

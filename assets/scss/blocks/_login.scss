@@ -5,14 +5,20 @@
     @media (max-width: $medium-screen) and (min-width: $tablet-screen) {
         font-size: 0px;
     }
+
+    &:hover {
+        color: $color-1;
+    }
 }
 
-.login::before {
-    content: "";
+.login__ico { 
     display: inline-block;
     width: 18px;
-    height: 18px;
-    background: url("../images/vector.png") 0px 0px no-repeat;
+    height: 18px;    
     vertical-align: middle;
     margin-right: 7px;
+}
+
+.login:hover svg {
+    fill: $color-1;
 }

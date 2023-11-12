@@ -2,16 +2,21 @@
     font-size: 0px;
     position: relative;
     height: 25px;    
+    &:hover {
+        color: $color-1;
+    }
 }
 
-.languages__selected::before {
-    content: "";
-    background: url('../images/language_icon.png') 0px 0px no-repeat;
-    width: 24px;
-    height: 24px;
+.languages__ico {    
+    width: 20px;
+    height: 20px;
     display: inline-block;
     vertical-align: middle;
     margin-right: 8px;
+}
+
+.languages:hover svg path{
+    fill: $color-1;
 }
 
 .languages__selected {
