@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./assets/js/libs/styler/jquery.formstyler.css" rel="stylesheet" />
+    <link href="./assets/css/main.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
+    <title>DataCell</title>
+</head>
+
+<body>
+    <div class="loader loader_active"></div>
+    <header>
+        <div class="header">
+            <div class="header__container container">
+                <div class="header__top">
+                    <div class="header__logo">
+                        <a href="/" class="logo"><img src="./assets/images/logo.png" alt="DataCell"></a>
+                    </div>
+                    <div class="header__top-btn">
+                        <a href="#!" class="btn" data-modal="contacts-form">Contact Us<span
+                                class="btn-tangle"></span></a>
+                        <a href="#!" class="btn btn_active" data-modal="contacts-form">Get Started</a>
+                    </div>
+                    <div class="header__burger">
+                        <div class="burger-menu-btn"></div>
+                    </div>
+                </div>
+                <div class="header__bottom">
+                    <div class="header-menu">
+                        <div class="header-menu__item">
+                            <a href="#!" class="header-menu__link">About</a>
+                            <div class="header-submenu">
+                                <div class="header-submenu__list">
+                                    <div class="header-submenu__item">
+                                        <a href="#!" class="header-submenu__link">TMR</a>
+                                    </div>
+                                    <div class="header-submenu__item">
+                                        <a href="#!" class="header-submenu__link">Pricing</a>
+                                    </div>
+                                    <div class="header-submenu__item">
+                                        <a href="#!" class="header-submenu__link">SP&I</a>
+                                    </div>
+                                    <div class="header-submenu__item">
+                                        <a href="#!" class="header-submenu__link">Supply Chain</a>
+                                    </div>
+                                    <div class="header-submenu__item">
+                                        <a href="#!" class="header-submenu__link">NGP</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header-menu__item header-menu__item_active">
+                            <a href="#!" class="header-menu__link">BI Reporting</a>
+                            <div class="header-submenu">
+                                <div class="header-submenu__list">
+                                    <div class="header-submenu__item">
+                                        <a href="#!" class="header-submenu__link">TMR</a>
+                                    </div>
+                                    <div class="header-submenu__item">
+                                        <a href="#!" class="header-submenu__link">Pricing</a>
+                                    </div>
+                                    <div class="header-submenu__item">
+                                        <a href="#!" class="header-submenu__link">SP&I</a>
+                                    </div>
+                                    <div class="header-submenu__item">
+                                        <a href="#!" class="header-submenu__link">Supply Chain</a>
+                                    </div>
+                                    <div class="header-submenu__item">
+                                        <a href="#!" class="header-submenu__link">NGP</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header-menu__item">
+                            <a href="#!" class="header-menu__link">Data Governance</a>
+                            <div class="header-submenu">
+                                <div class="header-submenu__list">
+                                    <div class="header-submenu__item">
+                                        <a href="#!" class="header-submenu__link">TMR</a>
+                                    </div>
+                                    <div class="header-submenu__item">
+                                        <a href="#!" class="header-submenu__link">Pricing</a>
+                                    </div>
+                                    <div class="header-submenu__item">
+                                        <a href="#!" class="header-submenu__link">SP&I</a>
+                                    </div>
+                                    <div class="header-submenu__item">
+                                        <a href="#!" class="header-submenu__link">Supply Chain</a>
+                                    </div>
+                                    <div class="header-submenu__item">
+                                        <a href="#!" class="header-submenu__link">NGP</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header-menu__item">
+                            <a href="#!" class="header-menu__link">Data Governance</a>
+                        </div>
+                        <div class="header-menu__item">
+                            <a href="#!" class="header-menu__link">Instructions</a>
+                        </div>
+                        <div class="header-menu__item">
+                            <a href="#!" class="header-menu__link">Team</a>
+                        </div>
+                    </div>
+
+                    <div class="header-additional">
+                        <div class="search-line">
+                            <form class="search-line__form">
+                                <button class="search-line__btn"></button>
+                                <div class="search-line__placeholder">Search</div>
+                                <input type="text" class="search-line__input" name="search" placeholder="Search" />
+                                <button type="reset" class="search-line__close-btn"></button>
+                            </form>
+                        </div>
+                        <div class="languages">
+                            <div class="languages__selected">English</div>
+                            <div class="languages__selector">
+                                <div class="languages__list">
+                                    <a href="#!" class="languages__item">中文</a>
+                                    <a href="#!" class="languages__item">English</a>
+                                    <a href="#!" class="languages__item">Русский</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="login">
+                            Log In
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="burger-menu">
+            <div class="burger-menu__top container">
+                <a href="/" class="logo burger-menu__logo"><img src="./assets/images/logo.png" alt="DataCell"></a>
+                <div class="burger-menu-btn burger-menu__btn burger-menu-btn_open"></div>
+            </div>
+
+            <div class="burger-menu__additional">
+                <div class="burger-menu__additional-container container">
+                    <div class="search-line burger-menu__search-line">
+                        <form class="search-line__form burger-menu__search-form">
+                            <button class="search-line__btn"></button>
+                            <div class="search-line__placeholder">Search</div>
+                            <input type="text" class="search-line__input" name="search" placeholder="Search" />
+                            <button type="reset" class="search-line__close-btn"></button>
+                        </form>
+                    </div>
+                    <div class="languages">
+                        <div class="languages__selected">English</div>
+                        <div class="languages__selector">
+                            <div class="languages__list">
+                                <a href="#!" class="languages__item">中文</a>
+                                <a href="#!" class="languages__item">English</a>
+                                <a href="#!" class="languages__item">Русский</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="login">
+                        Log In
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="burger-menu__menu-list">
+                    <div class="burger-menu__menu-item">
+                        <a href="#!" class="burger-menu__link">About</a>
+                    </div>
+                    <div class="burger-menu__menu-item">
+                        <a href="#!" class="burger-menu__link">BI Reporting</a>
+                    </div>
+                    <div class="burger-menu__menu-item">
+                        <a href="#!" class="burger-menu__link">Data Governance</a>
+                    </div>
+                    <div class="burger-menu__menu-item">
+                        <a href="#!" class="burger-menu__link">Data Governance</a>
+                    </div>
+                    <div class="burger-menu__menu-item">
+                        <a href="#!" class="burger-menu__link">Instructions</a>
+                    </div>
+                    <div class="burger-menu__menu-item">
+                        <a href="#!" class="burger-menu__link">Team</a>
+                    </div>
+                </div>
+            </div>
+            <div class="burger-menu__buttom-btn container">
+                <a href="#!" class="btn" data-modal="contacts-form">Contact Us <span class="btn-tangle"></span></a>
+                <a href="#!" class="btn btn_active">Get Started</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+            <section>
+                <h2 class="header-text header-text_h2">Form</h2>
+                <form class="form">
+                    <div class="form__row">
+                        <label class="form__label" >Slect</label>
+                        <select name="select" class="js-select">
+                            <option value="1">item 1</option>
+                            <option value="1">item 2</option>
+                            <option value="1">item 3</option>
+                            <option value="1">item 4</option>
+                            <option value="1">item 5</option>
+                            <option value="1">item 6</option>
+                        </select>
+                    </div>
+                    <div class="form__row">
+                        <label class="form__label" >Slect error</label>
+                        <select name="select" class="js-select js-select_error">
+                            <option value="1">item 1</option>
+                            <option value="1">item 2</option>
+                            <option value="1">item 3</option>
+                            <option value="1">item 4</option>
+                            <option value="1">item 5</option>
+                            <option value="1">item 6</option>
+                        </select>
+                    </div>
+                    <div class="form__row">
+                        <label class="form__label" >Slect disabled</label>
+                        <select name="select" class="js-select" disabled>
+                            <option value="1">item 1</option>
+                            <option value="1">item 2</option>
+                            <option value="1">item 3</option>
+                            <option value="1">item 4</option>
+                            <option value="1">item 5</option>
+                            <option value="1">item 6</option>
+                        </select>
+                    </div>
+                    <div class="form__row">
+                        <label class="form__label" >Checkbox</label>
+                        
+                        <input id="color" type="checkbox" name="color" class="checkbox" />
+                        <label class="checkbox-label" for="color"></label>
+                        <span>Test 1</span>
+                        
+                        <input id="color1" type="checkbox" name="color" class="checkbox" />
+                        <label class="checkbox-label" for="color1"></label>
+                        <span>Test 2</span>
+                        
+                        <input id="color2" type="checkbox" name="color" class="checkbox" />
+                        <label class="checkbox-label" for="color2"></label>
+                        <span>Test 3</span>
+                    </div>
+                    <div class="form__row">
+                        <label class="form__label" >Radio</label>
+                        
+                        <input id="color" type="Radio" name="color" class="form__radio" />
+                        <label class="checkbox-label" for="color"></label>
+                        <span>Test 1</span>
+                        
+                        <input id="color1" type="radio" name="color" class="form__radio" />
+                        <label class="checkbox-label" for="color1"></label>
+                        <span>Test 2</span>
+                        
+                        <input id="color2" type="radio" name="color" class="form__radio" />
+                        <label class="checkbox-label" for="color2"></label>
+                        <span>Test 3</span>
+                    </div>
+                </form>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-wrapp">
+            <div class="container">
+                <div class="footer">
+                    <div class="footer__logo">
+                        <a href="/" class="logo"><img src="./assets/images/logo.png" alt="DataCell"></a>
+                    </div>
+                    <div class="footer-menu">
+                        <div class="footer-main-menu">
+                            <div class="footer-main-menu__item">
+                                <a href="#!" class="footer-main-menu__link">About</a>
+                            </div>
+                            <div class="footer-main-menu__item">
+                                <a href="#!" class="footer-main-menu__link">BI Reporting</a>
+                            </div>
+                            <div class="footer-main-menu__item">
+                                <a href="#!" class="footer-main-menu__link">Data Governance</a>
+                            </div>
+                            <div class="footer-main-menu__item">
+                                <a href="#!" class="footer-main-menu__link">Data Governance</a>
+                            </div>
+                            <div class="footer-main-menu__item">
+                                <a href="#!" class="footer-main-menu__link">Instructions</a>
+                            </div>
+                            <div class="footer-main-menu__item">
+                                <a href="#!" class="footer-main-menu__link">Team</a>
+                            </div>
+                        </div>
+                        <div class="footer-tabs">
+                            <div class="footer-tabs__col">
+                                <div class="footer-tabs__item"><a href="#!" class="footer-tabs__link">TMR</a></div>
+                                <div class="footer-tabs__item"><a href="#!" class="footer-tabs__link">Pricing</a></div>
+                                <div class="footer-tabs__item"><a href="#!" class="footer-tabs__link">SP&I</a></div>
+                                <div class="footer-tabs__item"><a href="#!" class="footer-tabs__link">Supply Chain</a>
+                                </div>
+                            </div>
+                            <div class="footer-tabs__col">
+                                <div class="footer-tabs__item"><a href="#!" class="footer-tabs__link">NGP</a></div>
+                                <div class="footer-tabs__item"><a href="#!" class="footer-tabs__link">Disgribution</a>
+                                </div>
+                                <div class="footer-tabs__item"><a href="#!" class="footer-tabs__link">KA</a></div>
+                                <div class="footer-tabs__item"><a href="#!" class="footer-tabs__link">Sales Planning</a>
+                                </div>
+                                <div class="footer-tabs__item"><a href="#!" class="footer-tabs__link">CORP</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-copyright container">
+                    © Datacell team, 2023
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./assets/js/libs/jquery.min.js"></script>
+    <script src="./assets/js/libs/styler/jquery.formstyler.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

@@ -36,9 +36,9 @@ tabMenuItemsList.forEach((item) => {
     item.addEventListener("click", function (event) {
         event.preventDefault();
         const link = this.getAttribute("href");
-        if(link) {
-            activateTab (link.replace('#',''));            
-            const refresh = window.location.protocol + "//" + window.location.host + window.location.pathname + link;    
+        if (link) {
+            activateTab(link.replace('#', ''));
+            const refresh = window.location.protocol + "//" + window.location.host + window.location.pathname + link;
             window.history.pushState({ path: refresh }, '', refresh);
         }
     });
@@ -131,13 +131,13 @@ function validateEmail(email) {
 };
 
 // Activate tab after load page
-function setActiveTab() {    
+function setActiveTab() {
     const matches = location.hash.match(new RegExp(/tab([0-9])*$/g));
     const tabId = matches ? matches[0] : null;
     activateTab(tabId);
 }
 //Activeta tab's content
-function activateTab(tabId){    
+function activateTab(tabId) {
     if (tabId) {
         if (document.getElementById(tabId)) {
             tabs.forEach((tab) => {
@@ -146,12 +146,18 @@ function activateTab(tabId){
             document.getElementById(tabId).classList.add('tab-content_active');
 
             tabMenuItemsList.forEach((tab) => {
-                if( tab.getAttribute('href') === '#'+tabId ) {
+                if (tab.getAttribute('href') === '#' + tabId) {
                     tab.classList.add('tabs-memu__item_active');
-                } else{
+                } else {
                     tab.classList.remove('tabs-memu__item_active');
-                }                
+                }
             });
         }
     }
+}
+
+if ($(".js-select").length) {
+    $(".js-select").styler({
+        selectSmartPositioning: false,
+    });
 }
