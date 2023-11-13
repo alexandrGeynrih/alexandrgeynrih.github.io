@@ -156,6 +156,18 @@ function activateTab(tabId) {
     }
 }
 
+
+//Accordeon
+const accordeons = document.querySelectorAll(".accordean__title");
+accordeons.forEach((item) => {
+    item.addEventListener("click", function (event) {
+        if (this.closest(".accordean__item")) {
+            this.closest(".accordean__item").classList.toggle('accordean__item-open');
+        }
+    });
+});
+
+
 if ($(".js-select").length) {
     $(".js-select").styler({
         selectSmartPositioning: false,
