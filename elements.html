@@ -203,67 +203,79 @@
                 <h2 class="header-text header-text_h2">Form</h2>
                 <form class="form">
                     <div class="form__row">
-                        <label class="form__label" >Slect</label>
-                        <select name="select" class="js-select">
-                            <option value="1">item 1</option>
-                            <option value="1">item 2</option>
-                            <option value="1">item 3</option>
-                            <option value="1">item 4</option>
-                            <option value="1">item 5</option>
-                            <option value="1">item 6</option>
-                        </select>
+                        <div class="form_col40">
+                            <label class="form__label">Slect</label>
+                        </div>
+                        <div class="form_col60">
+                            <select name="select" class="js-select">
+                                <option value="1">item 1</option>
+                                <option value="1">item 2</option>
+                                <option value="1">item 3</option>
+                                <option value="1">item 4</option>
+                                <option value="1">item 5</option>
+                                <option value="1">item 6</option>
+                            </select>
+                        </div>
                     </div>
                     <div class="form__row">
-                        <label class="form__label" >Slect error</label>
-                        <select name="select" class="js-select js-select_error">
-                            <option value="1">item 1</option>
-                            <option value="1">item 2</option>
-                            <option value="1">item 3</option>
-                            <option value="1">item 4</option>
-                            <option value="1">item 5</option>
-                            <option value="1">item 6</option>
-                        </select>
+                        <div class="form_col40">
+                            <label class="form__label">Slect error</label>
+                        </div>
+                        <div class="form_col60">
+                            <select name="select" class="js-select js-select_error">
+                                <option value="1">item 1</option>
+                                <option value="1">item 2</option>
+                                <option value="1">item 3</option>
+                                <option value="1">item 4</option>
+                                <option value="1">item 5</option>
+                                <option value="1">item 6</option>
+                            </select>
+                        </div>
                     </div>
                     <div class="form__row">
-                        <label class="form__label" >Slect disabled</label>
-                        <select name="select" class="js-select" disabled>
-                            <option value="1">item 1</option>
-                            <option value="1">item 2</option>
-                            <option value="1">item 3</option>
-                            <option value="1">item 4</option>
-                            <option value="1">item 5</option>
-                            <option value="1">item 6</option>
-                        </select>
+                        <div class="form_col40">
+                            <label class="form__label">Slect disabled</label>
+                        </div>
+                        <div class="form_col60">
+                            <select name="select" class="js-select" disabled>
+                                <option value="1">item 1</option>
+                                <option value="1">item 2</option>
+                                <option value="1">item 3</option>
+                                <option value="1">item 4</option>
+                                <option value="1">item 5</option>
+                                <option value="1">item 6</option>
+                            </select>
+                        </div>
                     </div>
                     <div class="form__row">
-                        <label class="form__label" >Checkbox</label>
-                        
-                        <input id="color" type="checkbox" name="color" class="checkbox" />
-                        <label class="checkbox-label" for="color"></label>
-                        <span>Test 1</span>
-                        
-                        <input id="color1" type="checkbox" name="color" class="checkbox" />
-                        <label class="checkbox-label" for="color1"></label>
-                        <span>Test 2</span>
-                        
-                        <input id="color2" type="checkbox" name="color" class="checkbox" />
-                        <label class="checkbox-label" for="color2"></label>
-                        <span>Test 3</span>
+                        <div class="form_col40">
+                            <label class="form__label">Checkbox</label>
+                        </div>
+                        <div class="form_col60">
+                            <input id="color_checkbox1" type="checkbox" name="color" class="form__checkbox" />
+                            <label class="form__checkbox-label" for="color_checkbox1">Default</label>                            
+                            
+                            <input id="color_checkbox2" type="checkbox" name="color" class="form__checkbox form__checkbox_error" />
+                            <label class="form__checkbox-label" for="color_checkbox2">Error</label>                            
+
+                            <input id="color_checkbox3" type="checkbox" name="color" class="form__checkbox" disabled checked/>
+                            <label class="form__checkbox-label" for="color_checkbox3">Disabled</label>                            
+                        </div>
                     </div>
                     <div class="form__row">
-                        <label class="form__label" >Radio</label>
-                        
-                        <input id="color" type="Radio" name="color" class="form__radio" />
-                        <label class="checkbox-label" for="color"></label>
-                        <span>Test 1</span>
-                        
-                        <input id="color1" type="radio" name="color" class="form__radio" />
-                        <label class="checkbox-label" for="color1"></label>
-                        <span>Test 2</span>
-                        
-                        <input id="color2" type="radio" name="color" class="form__radio" />
-                        <label class="checkbox-label" for="color2"></label>
-                        <span>Test 3</span>
+                        <div class="form_col40">
+                            <label class="form__label">Radio</label>
+                        </div>
+                        <div class="form_col60">
+                            <input id="color_radio1" type="Radio" name="color" class="form__radio" />
+                            <label class="form__radio-label" for="color_radio1">Default</label>                            
+
+                            <input id="color_radio2" type="radio" name="color" class="form__radio form__radio-error" />
+                            <label class="form__radio-label" for="color_radio2">Error</label>
+                            
+                            <input id="color_radio3" type="radio" name="color" class="form__radio" disabled checked />
+                            <label class="form__radio-label" for="color_radio3">Disabled</label>
+                        </div>
                     </div>
                 </form>
             </section>
