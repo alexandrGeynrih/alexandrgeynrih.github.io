@@ -327,6 +327,11 @@
                     <p>Our support service is ready to answer any of your questions, with 24/7 assistance available
                         for
                         extended plan users.</p>
+                        <br>
+                        <div>
+                            <div class="btn" data-show-notification="#succees-notification">Show notification</div>
+                            <div class="btn" data-show-notification="#error-notification">Show error notification</div>
+                        </div>
 
                     <table>
                         <thead>
@@ -423,6 +428,17 @@
             </div>
         </div>
     </footer>
+
+    <div class="notification notification_success" id="succees-notification">
+        <div class="notification_close"></div>
+        <div class="notification_text">It’s good! The document has been sent.</div>
+    </div>
+
+    <div class="notification notification_error" id="error-notification">
+        <div class="notification_close"></div>
+        <div class="notification_text"></div>Sorry! The service is not available now. Please try again later.</div>
+    </div>
+
     <script src="./assets/js/libs/jquery.min.js"></script>
     <script src="./assets/js/libs/styler/jquery.formstyler.min.js"></script>
     <script src="./assets/js/main.js"></script>

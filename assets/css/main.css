@@ -1824,4 +1824,59 @@ a {
 
 .alert_error:before {
   background: #CF1D11 url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABESURBVHgBlZABCgAgCANHL/H/n/Ipi0AhzGAKgsyT4UDSow2ljpZ7xMAKXxATtAp3Wnv9c+ngB1qYlGQtP8NBPE4h8A2LiP+BztgEMAAAAABJRU5ErkJggg==") center no-repeat;
+}
+
+.notification {
+  display: none;
+  position: fixed;
+  left: -500%;
+  width: 360px;
+  max-width: 100%;
+  border-radius: 8px;
+  transition: all 0.3s linear;
+  z-index: 999;
+  padding: 16px 48px;
+  color: #fff;
+  transform: translateX(-50%);
+  opacity: 1;
+}
+.notification:before, .notification::after {
+  content: "";
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  border: 1px solid #fff;
+  border-radius: 50px;
+  width: 24px;
+  height: 24px;
+}
+
+.notification_active {
+  display: block;
+  top: 72px;
+  left: 50%;
+}
+
+.notification_close {
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABESURBVHgBlZABCgAgCANHL/H/n/Ipi0AhzGAKgsyT4UDSow2ljpZ7xMAKXxATtAp3Wnv9c+ngB1qYlGQtP8NBPE4h8A2LiP+BztgEMAAAAABJRU5ErkJggg==") center no-repeat;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: 23px;
+  right: 23px;
+  cursor: pointer;
+}
+
+.notification_success {
+  background-color: #B8CE10;
+}
+.notification_success::before {
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAJCAYAAADkZNYtAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABrSURBVHgBhY4BDYAwDATXBAFImASk4GBIwMHAAU7ACRKQgITShTV8lrJ90qT53iV1rhFmnvlNaIEDfwk10MtcGYxaTqVVgDseNAt0Z+6S0CMcUZDZAPTWfyik3Cb4I4wW0+lCRKtAuh8W/ACakZ4dnMOf2QAAAABJRU5ErkJggg==") center no-repeat;
+}
+
+.notification_error {
+  background-color: #CF1D11;
+}
+.notification_error::before {
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABESURBVHgBlZABCgAgCANHL/H/n/Ipi0AhzGAKgsyT4UDSow2ljpZ7xMAKXxATtAp3Wnv9c+ngB1qYlGQtP8NBPE4h8A2LiP+BztgEMAAAAABJRU5ErkJggg==") center no-repeat;
 }/*# sourceMappingURL=main.css.map */
