@@ -1999,4 +1999,93 @@ a {
 .datepicker__next {
   font-size: 25px;
   color: #1D1D1D;
+}
+
+.pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  margin: 16px 0px;
+}
+
+.pagination__item {
+  margin: 0px 7px;
+}
+
+@media (max-width: 767px) {
+  .pagination__item {
+    margin: 0 2px;
+  }
+}
+.pagination__href {
+  display: block;
+  text-align: center;
+  position: relative;
+  width: 24px;
+  height: 24px;
+  color: #1D1D1D;
+  border-radius: 8px;
+  font-weight: 700;
+  -webkit-transition: background 0.3s, color 0.3s;
+  -o-transition: background 0.3s, color 0.3s;
+  transition: background 0.3s, color 0.3s;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+@media (max-width: 767px) {
+  .pagination__href {
+    font-size: 14px;
+  }
+}
+.pagination__href--prev:before,
+.pagination__href--next:before {
+  content: "";
+  display: block;
+  background: transparent url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAGCAYAAAD68A/GAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACOSURBVHgBdY+9DcMgEIXvSJOSAQBllXQps0GUMmUm8ArZIB7BG3gUI7GABTXgd5aRLEt+0hM/38dJsHNuIkQpdfcI7XJDSinjymutHl0vBByljc2Ms845/8GezOxlsohNwrZPKX25TbDW9lhe6IwHBEmLFEJ4C780McY4aC2MHugV/UH60Fnwuc4Y0x3vF4+CQknRVLbSAAAAAElFTkSuQmCC") center center no-repeat;
+  position: absolute;
+  top: 10px;
+  width: 10px;
+  height: 6px;
+}
+
+.pagination__href--prev:before {
+  left: 10px;
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.pagination__href--next:before {
+  right: 10px;
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+
+.pagination__href--active {
+  color: #B8CE10;
+}
+
+.pagination__href:hover {
+  background-color: #A9BD0F;
+  color: #fff;
+}
+
+.pagination__href--prev:hover,
+.pagination__href--next:hover {
+  background-color: transparent;
+}
+
+.pagination__href--active {
+  pointer-events: none;
 }/*# sourceMappingURL=main.css.map */
