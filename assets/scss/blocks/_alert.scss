@@ -1,0 +1,29 @@
+.alert {
+    padding: 15px;
+    padding-left: 47px;
+    border: 1px solid $border-color;
+    position: relative;
+    border-radius: 8px;
+    color: $article-text-color;
+    background: #F3F4F1;
+    margin: 16px 0px;
+
+    &:before,
+    &:after {
+        content: '';
+        position: absolute;
+        border-radius: 12px;
+        top: 16px;
+        left: 16px;
+        width: 24px;
+        height: 24px;
+    }
+}
+
+.alert_info:before {
+    background: #116ECF url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAAMCAYAAABIvGxUAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAArSURBVHgBjYqxCQAACMNU/P9F/aTawcFBMBDIEAUQ0pic6DwMrPkT3iajAJ0QDKir8o6QAAAAAElFTkSuQmCC') center no-repeat;   
+}
+
+.alert_error:before {
+    background:#CF1D11 url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABESURBVHgBlZABCgAgCANHL/H/n/Ipi0AhzGAKgsyT4UDSow2ljpZ7xMAKXxATtAp3Wnv9c+ngB1qYlGQtP8NBPE4h8A2LiP+BztgEMAAAAABJRU5ErkJggg==') center no-repeat;
+}
