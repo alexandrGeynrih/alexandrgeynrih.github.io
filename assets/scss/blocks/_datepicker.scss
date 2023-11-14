@@ -1,0 +1,29 @@
+.datepicker__day.is-selected div {
+    background-color: transparent;
+    color: $text-hover-color;
+    font-weight: bold;
+}
+
+
+.datepicker__day.is-today div {
+    font-weight: bold;
+}
+
+.datepicker__day.is-today .datepicker__daynum {
+    text-decoration: none;
+}
+
+.datepicker__day div:hover {
+    background-color: $text-hover-color;
+    color: #fff;
+}
+
+.datepicker__day div {
+    border-radius: 4px;
+}
+
+.datepicker__prev,
+.datepicker__next {
+    font-size: 25px;
+    color: $main-text-color;
+}

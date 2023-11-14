@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./assets/js/libs/styler/jquery.formstyler.css" rel="stylesheet" />
+    <link href="./assets/js/libs/datepicker/css/datepicker.minimal.css" rel="stylesheet" />
     <link href="./assets/css/main.css" rel="stylesheet" />
     <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
     <title>DataCell</title>
@@ -253,13 +254,15 @@
                         </div>
                         <div class="form_col60">
                             <input id="color_checkbox1" type="checkbox" name="color" class="form__checkbox" />
-                            <label class="form__checkbox-label" for="color_checkbox1">Default</label>                            
-                            
-                            <input id="color_checkbox2" type="checkbox" name="color" class="form__checkbox form__checkbox_error" />
-                            <label class="form__checkbox-label" for="color_checkbox2">Error</label>                            
+                            <label class="form__checkbox-label" for="color_checkbox1">Default</label>
 
-                            <input id="color_checkbox3" type="checkbox" name="color" class="form__checkbox" disabled checked/>
-                            <label class="form__checkbox-label" for="color_checkbox3">Disabled</label>                            
+                            <input id="color_checkbox2" type="checkbox" name="color"
+                                class="form__checkbox form__checkbox_error" />
+                            <label class="form__checkbox-label" for="color_checkbox2">Error</label>
+
+                            <input id="color_checkbox3" type="checkbox" name="color" class="form__checkbox" disabled
+                                checked />
+                            <label class="form__checkbox-label" for="color_checkbox3">Disabled</label>
                         </div>
                     </div>
                     <div class="form__row">
@@ -268,15 +271,29 @@
                         </div>
                         <div class="form_col60">
                             <input id="color_radio1" type="Radio" name="color" class="form__radio" />
-                            <label class="form__radio-label" for="color_radio1">Default</label>                            
+                            <label class="form__radio-label" for="color_radio1">Default</label>
 
                             <input id="color_radio2" type="radio" name="color" class="form__radio form__radio-error" />
                             <label class="form__radio-label" for="color_radio2">Error</label>
-                            
+
                             <input id="color_radio3" type="radio" name="color" class="form__radio" disabled checked />
                             <label class="form__radio-label" for="color_radio3">Disabled</label>
                         </div>
                     </div>
+
+                    <div class="form__row">
+                        <div class="form_col40">
+                            <label class="form__label">Datepicker</label>
+                        </div>
+                        <div class="form_col60">
+                            <input id="datepicker" placeholder="dd.mm.yyyy" type="text" class="form__datepicker form__input-text"/>
+                            <br><br>
+                            <input id="datepicker" placeholder="dd.mm.yyyy" type="text" class="form__datepicker form__input-text_error form__input-text"/>
+                            <br><br>
+                            <input id="datepicker" placeholder="dd.mm.yyyy" type="text" class="form__datepicker form__input-text" disabled/>
+                        </div>
+                    </div>
+
                 </form>
             </section>
             <section class="content-section">
@@ -287,21 +304,27 @@
                         <div class="accordean__title">Accordeon Headline</div>
                         <div class="accordean__content">
                             <p>You can change this content block. </p>
-                            <p>A large population, strategic location, considerable technical talent pool, access to the world’s best commodity resources and high growth potential are factors that make Russia an attractive place for foreign companies to do business.</p>
+                            <p>A large population, strategic location, considerable technical talent pool, access to the
+                                world’s best commodity resources and high growth potential are factors that make Russia
+                                an attractive place for foreign companies to do business.</p>
                         </div>
                     </div>
                     <div class="accordean__item">
                         <div class="accordean__title">Accordeon Headline 2</div>
                         <div class="accordean__content">
                             <p>You can change this content block. </p>
-                            <p>A large population, strategic location, considerable technical talent pool, access to the world’s best commodity resources and high growth potential are factors that make Russia an attractive place for foreign companies to do business.</p>
+                            <p>A large population, strategic location, considerable technical talent pool, access to the
+                                world’s best commodity resources and high growth potential are factors that make Russia
+                                an attractive place for foreign companies to do business.</p>
                         </div>
                     </div>
                     <div class="accordean__item">
                         <div class="accordean__title">Accordeon Headline 3</div>
                         <div class="accordean__content">
                             <p>You can change this content block. </p>
-                            <p>A large population, strategic location, considerable technical talent pool, access to the world’s best commodity resources and high growth potential are factors that make Russia an attractive place for foreign companies to do business.</p>
+                            <p>A large population, strategic location, considerable technical talent pool, access to the
+                                world’s best commodity resources and high growth potential are factors that make Russia
+                                an attractive place for foreign companies to do business.</p>
                         </div>
                     </div>
                 </div>
@@ -316,22 +339,27 @@
                         attractive
                         place for foreign companies to do business.</p>
 
-                        <div class="alert alert_info">
-                            A large population, strategic location, considerable technical talent pool, access to the world’s best commodity resources and high growth potential are factors that make Russia an attractive place for foreign companies to do business.
-                        </div>
-                       
-                        <div class="alert alert_error">
-                            A large population, strategic location, considerable technical talent pool, access to the world’s best commodity resources and high growth potential are factors that make Russia an attractive place for foreign companies to do business.
-                        </div>
+                    <div class="alert alert_info">
+                        A large population, strategic location, considerable technical talent pool, access to the
+                        world’s best commodity resources and high growth potential are factors that make Russia an
+                        attractive place for foreign companies to do business.
+                    </div>
 
-                    <p>Our support service <span class="tooltip" data-tip="Additional information">is ready</span> to answer any of your questions, with 24/7 assistance available
+                    <div class="alert alert_error">
+                        A large population, strategic location, considerable technical talent pool, access to the
+                        world’s best commodity resources and high growth potential are factors that make Russia an
+                        attractive place for foreign companies to do business.
+                    </div>
+
+                    <p>Our support service <span class="tooltip" data-tip="Additional information   ">is ready</span> to
+                        answer any of your questions, with 24/7 assistance available
                         for
                         extended plan users.</p>
-                        <br>
-                        <div>
-                            <div class="btn" data-show-notification="#succees-notification">Show notification</div>
-                            <div class="btn" data-show-notification="#error-notification">Show error notification</div>
-                        </div>
+                    <br>
+                    <div>
+                        <div class="btn" data-show-notification="#succees-notification">Show notification</div>
+                        <div class="btn" data-show-notification="#error-notification">Show error notification</div>
+                    </div>
 
                     <table>
                         <thead>
@@ -436,11 +464,13 @@
 
     <div class="notification notification_error" id="error-notification">
         <div class="notification_close"></div>
-        <div class="notification_text"></div>Sorry! The service is not available now. Please try again later.</div>
+        <div class="notification_text"></div>Sorry! The service is not available now. Please try again later.
+    </div>
     </div>
 
     <script src="./assets/js/libs/jquery.min.js"></script>
     <script src="./assets/js/libs/styler/jquery.formstyler.min.js"></script>
+    <script src="./assets/js/libs/datepicker/datepicker.js"></script>
     <script src="./assets/js/main.js"></script>
 </body>
 

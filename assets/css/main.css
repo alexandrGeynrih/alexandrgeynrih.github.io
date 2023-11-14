@@ -588,6 +588,28 @@ a {
   margin-left: 16px;
 }
 
+.form__input-text {
+  border-radius: 8px;
+  border: 1px solid #DADDD4;
+  height: 40px;
+  padding: 16px 8px;
+  max-width: 100%;
+}
+
+.form__datepicker {
+  position: relative;
+  width: 149px;
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAEISURBVHgB7ZTPDYJQDMb7RLiR4I0LBEdgA53EGdzADRxBR3AEN9ANNOHCTRNu/PWrkcSY8nzEeFF+CWl5NG2/5hWigU8Jw/DEj+n5K+N3AU3TRH3OX1FdHyJQVdUG7oz07CzLWp6BcQFOXtf1AV16ZMYVRWKpiDgidL6G4eTbLMuWVyDF+b4f2ba9grsoy5LVzslEQRAEDduiKKZpmp5JA8R6aOjCKpIkmZCJghZ0d0IxXQirbV1xnCP6MloFkKzIgHakEl9X8KMFlFL3e+8BegMvJfUtgA0+snVdd61L8NiB1eN1J8WIt4Q31HGcXr8KLGUsLaWogAPzPI+7unpOjCb2XckH/oQbhAJzEiQp6tIAAAAASUVORK5CYII=") 114px center no-repeat;
+  padding: 8px 16px;
+}
+.form__datepicker:disabled {
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAEBSURBVHgB7VTLEYIwEH3B39USKEE70KOjB6nAFrQDrcAStAOYUfRqB9oBlMBVGFkT5OAwWT6jXJR3CZPsvt0X9gVo8Cnck+MdXMcru59FuyiACKaosJ8FG3M+2+aDxA6EEfIJnDCklWVZPnPOkMfiKj/7KIcgCmmoK6K9ojgWW0Uuq+/T7gK2EcIaJBadnlQLjLMxhi6RgLlaJfmGI1eYTCw/umOZJg10Mbk/udMV3tF1UBLa6zRQM3IVzKbzMpMIqZK4s9oV/G6BZDRt2y40mvICKhcQuKlFjulWFjG5ZNVAYjS8ngw9FdPVt54KrQLl0JZBQ66rd2Lp4AtH3uBP8ARdlW5aCvVbwAAAAABJRU5ErkJggg==");
+}
+
+.form__input-text_error {
+  border-color: #CF1D11;
+}
+
 .header {
   border-bottom: 2px solid rgb(243, 244, 241);
   top: 0px;
@@ -1949,4 +1971,32 @@ a {
     margin-left: -5em;
     width: 10em;
   }
+}
+.datepicker__day.is-selected div {
+  background-color: transparent;
+  color: #A9BD0F;
+  font-weight: bold;
+}
+
+.datepicker__day.is-today div {
+  font-weight: bold;
+}
+
+.datepicker__day.is-today .datepicker__daynum {
+  text-decoration: none;
+}
+
+.datepicker__day div:hover {
+  background-color: #A9BD0F;
+  color: #fff;
+}
+
+.datepicker__day div {
+  border-radius: 4px;
+}
+
+.datepicker__prev,
+.datepicker__next {
+  font-size: 25px;
+  color: #1D1D1D;
 }/*# sourceMappingURL=main.css.map */

@@ -187,6 +187,13 @@ notificationCloseBtn.forEach((item) => {
 });
 
 
+const datepickers = document.querySelectorAll('.form__datepicker');
+datepickers.forEach((item) => {
+    const datepicker = new Datepicker(item);    
+});
+
+
+
 if ($(".js-select").length) {
     $(".js-select").styler({
         selectSmartPositioning: false,
