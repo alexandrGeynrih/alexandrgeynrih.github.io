@@ -6,9 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./assets/css/main.css" rel="stylesheet" />
-    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
-    <link rel="icon" type="image/png" href="./assets/images/favicon.png" />
-    <link rel="apple-touch-icon" href="./assets/images/favicon.png">
+    
+    <link rel="icon" sizes="16x16" type="image/x-icon" href="./assets/images/favicon.ico">    
+    <link rel="icon" sizes="42x48" type="image/png" href="./assets/images/favicon.png" />    
+
     <title>DataCell</title>
 </head>
 
@@ -19,7 +20,7 @@
             <div class="header__container container">
                 <div class="header__top">
                     <div class="header__logo">
-                        <a href="/" class="logo"><img src="./assets/images/logo.png" alt="DataCell"></a>
+                        <a href="/" class="logo"><img src="./assets/images/logo.svg" alt="DataCell"></a>
                     </div>
                     <div class="header__top-btn">
                         <a href="#!" class="btn" data-modal="contacts-form">Contact Us</a>
@@ -166,7 +167,7 @@
 
         <div class="burger-menu">
             <div class="burger-menu__top container">
-                <a href="/" class="logo burger-menu__logo"><img src="./assets/images/logo.png" alt="DataCell"></a>
+                <a href="/" class="logo burger-menu__logo"><img src="./assets/images/logo.svg" alt="DataCell"></a>
                 <div class="burger-menu-btn burger-menu__btn burger-menu-btn_open"></div>
             </div>
 
@@ -174,7 +175,14 @@
                 <div class="burger-menu__additional-container container">
                     <div class="search-line burger-menu__search-line">
                         <form class="search-line__form burger-menu__search-form">
-                            <button class="search-line__btn"></button>
+                            <button class="search-line__btn">
+                                <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M9 16C12.866 16 16 12.866 16 9C16 5.13401 12.866 2 9 2C5.13401 2 2 5.13401 2 9C2 12.866 5.13401 16 9 16ZM9 18C13.9706 18 18 13.9706 18 9C18 4.02944 13.9706 0 9 0C4.02944 0 0 4.02944 0 9C0 13.9706 4.02944 18 9 18Z" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M15.7071 14.2929L19.7071 18.2929C20.0976 18.6834 20.0976 19.3166 19.7071 19.7071C19.3166 20.0976 18.6834 20.0976 18.2929 19.7071L14.2929 15.7071L15.7071 14.2929Z" />
+                                </svg>
+                            </button>
                             <div class="search-line__placeholder">Search</div>
                             <input type="text" class="search-line__input" name="search" placeholder="Search" />
                             <button type="reset" class="search-line__close-btn"></button>
@@ -801,7 +809,8 @@
                         <div class="subscribe__igree">
                             <input id="subscribe_igree" type="checkbox" name="subscribe_igree" class="form__checkbox"
                                 data-required="checked" />
-                            <label class="form__checkbox-label" for="subscribe_igree">I agree with <a href="!#" class="color-text">Privacy Policy</a></label>                             
+                            <label class="form__checkbox-label" for="subscribe_igree">I agree with <a href="!#"
+                                    class="color-text">Privacy Policy</a></label>
                         </div>
                     </form>
                 </div>
@@ -813,7 +822,7 @@
             <div class="container">
                 <div class="footer">
                     <div class="footer__logo">
-                        <a href="/" class="logo"><img src="./assets/images/logo.png" alt="DataCell"></a>
+                        <a href="/" class="logo"><img src="./assets/images/logo.svg" alt="DataCell"></a>
                     </div>
                     <div class="footer-menu">
                         <div class="footer-main-menu">
@@ -873,7 +882,8 @@
                             <div></div>
                             <div>
                                 <input id="checkbox_1" type="checkbox" name="igree" class="form__checkbox" />
-                                <label class="form__checkbox-label" for="checkbox_1">I agree with <a href="!#" class="color-text">Privacy Policy</a></label>                                
+                                <label class="form__checkbox-label" for="checkbox_1">I agree with <a href="!#"
+                                        class="color-text">Privacy Policy</a></label>
                             </div>
                         </div>
                     </div>
@@ -886,6 +896,9 @@
         </div>
     </div>
 
+    <script src="./assets/js/libs/jquery.min.js"></script>
+    <script src="./assets/js/libs/styler/jquery.formstyler.min.js"></script>
+    <script src="./assets/js/libs/datepicker/datepicker.js"></script>
     <script src="./assets/js/main.js"></script>
 </body>
 

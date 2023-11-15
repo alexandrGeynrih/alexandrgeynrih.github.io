@@ -6,6 +6,10 @@
     display: grid;
     grid-template-columns: 126px auto;
     padding-top: 16px;
+
+    @media (max-width: $mob-screen) {
+        grid-template-columns: 100%;
+    }
 }
 
 .modal-form__label {

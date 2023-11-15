@@ -12,6 +12,15 @@ searchLine.forEach((item) => {
     });
 });
 
+const searchLineClose = document.querySelectorAll(".search-line__close-btn");
+searchLineClose.forEach((item) => {
+    item.addEventListener("click", function (event) {
+        event.stopPropagation();
+        this.closest(".search-line").classList.remove('search-line__active');
+    });
+});
+
+
 
 //Reset classes after click on document
 document.addEventListener("click", function (event) {

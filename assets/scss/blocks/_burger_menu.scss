@@ -111,7 +111,7 @@
     color: $main-text-color;
 }
 
-.burger-menu__buttom-btn {    
+.burger-menu__buttom-btn {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -125,7 +125,20 @@
     text-align: center;
 }
 
+.burger-menu__search-form {
+    padding-left: 0px;
+}
+
+
 @media (max-width: $tablet-screen) {
+
+    .burger-menu_active-search {
+        display: block;
+    }
+
+    .burger-menu_active-search .burger-menu__search-line {
+        width: 100%;
+    }
 
     .burger-menu_active-search .languages,
     .burger-menu_active-search .login {
@@ -139,10 +152,10 @@
         width: 85px;
         height: 30px;
     }
-    
+
     .search-line__active .burger-menu__search-form {
         left: 0px;
-        width: 300px;        
+        width: 100%;
     }
 
     .burger-menu__search-form::before {

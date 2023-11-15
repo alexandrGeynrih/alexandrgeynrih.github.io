@@ -60,7 +60,7 @@
 
 
 .search-line__active .search-line__form {
-    width: 266px;
+    width: 309px;
 }
 
 .search-line__placeholder {
@@ -78,7 +78,7 @@
 }
 
 .search-line__active .search-line__input_small {
-    width: 132px;
+    width: 134px;
 }
 
 .search-line__active .search-line__close-btn {
@@ -88,8 +88,8 @@
 .search-line__close-btn {
     position: absolute;
     display: none;
-    top: 8px;
-    right: 0px;
+    top: 7px;
+    right: 5px;
     width: 10px;
     height: 10px;
 
@@ -109,4 +109,13 @@
     &::before {
         transform: rotate(45deg);
     }
+}
+
+.header_fixed .search-line__active .search-line__form {
+    width: 203px;
+}
+
+.header_fixed .search-line__active .search-line__close-btn {
+    top: 7px;
+    right: 9px;
 }

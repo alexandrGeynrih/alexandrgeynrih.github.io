@@ -2,6 +2,8 @@
     font-size: 14px;
     font-weight: 700;
     padding-top: 3px;
+    cursor: pointer;
+
     @media (max-width: $medium-screen) and (min-width: $tablet-screen) {
         font-size: 0px;
     }
@@ -11,10 +13,10 @@
     }
 }
 
-.login__ico { 
+.login__ico {
     display: inline-block;
     width: 18px;
-    height: 18px;    
+    height: 18px;
     vertical-align: middle;
     margin-right: 7px;
 }
