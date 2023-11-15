@@ -715,16 +715,76 @@ a {
 
 .btn {
   border: 1px solid #B8CE10;
+  border-radius: 8px;
   padding: 7px 23.5px;
   display: inline-block;
-  border-radius: 8px;
   font-size: 14px;
   font-weight: 700;
   line-height: 1.5rem;
   color: #1D1D1D;
   position: relative;
   vertical-align: middle;
+  overflow: hidden;
   cursor: pointer;
+  /*&::before{
+      content: '';
+      position: absolute;
+      display: block;
+      width: 88%;
+      height: 100%;
+      left: 0px;
+      top: 0px;
+
+      border-top-left-radius: 8px;
+      border-bottom-left-radius: 8px;
+
+      border-left: 1px solid $color-1;
+      border-top: 1px solid $color-1;
+      border-bottom: 1px solid $color-1;
+
+  }
+
+  &::after{
+      content: '';
+      position: absolute;
+      display: block;
+      width: 15%;
+      height: 100%;
+      right: 0px;
+      bottom: 0px;
+
+      border-top-right-radius: 8px;
+      border-bottom-right-radius: 8px;
+
+      border-right: 1px solid $color-1;
+      border-top: 1px solid $color-1;
+      border-bottom: 1px solid $color-1;        
+  }
+
+  &:hover::after{
+      height: 66%;
+      border-top: none;
+      border-top-right-radius: 5px;
+  }
+  */
+  /*
+  .btn__tangle
+  {
+      display: none;
+      position: absolute;
+      z-index: 1;
+      width: 12%;
+      height: 50px;
+      top: -6px;
+      right: -1px;
+      transform: rotate(-45deg);
+      border-right: 1px solid #b8ce10;
+  }
+
+  &:hover .btn__tangle {
+      display: block;
+  }
+  */
   /*
   &:hover {
       border-top-color: transparent;
