@@ -707,6 +707,9 @@ a:hover {
       display: block;
   }*/
 }
+.btn:hover {
+  color: #1D1D1D;
+}
 .btn_active {
   border: none;
   color: #fff;
@@ -739,6 +742,9 @@ a:hover {
    &:hover::after {
        background-color: #A9BD0F;
    }*/
+}
+.btn_active:hover {
+  color: #fff;
 }
 .btn + .btn {
   margin-left: 14px;
