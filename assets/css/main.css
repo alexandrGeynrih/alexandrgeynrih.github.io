@@ -236,6 +236,10 @@ body {
 
 a {
   color: #B8CE10;
+  transition: color 0.2s linear;
+}
+a:hover {
+  color: #A9BD0F;
 }
 
 .jq-selectbox {
@@ -1558,7 +1562,7 @@ a {
   width: 0px;
   height: 0px;
   left: -1000%;
-  z-index: 100;
+  z-index: 200;
 }
 
 .modal_active {
@@ -1683,7 +1687,7 @@ a {
 .burger-menu {
   display: none;
   position: fixed;
-  z-index: 20;
+  z-index: 110;
   top: 0px;
   left: 0px;
   width: 100%;
@@ -2057,6 +2061,10 @@ a {
     width: 10em;
   }
 }
+.datepicker__wrapper {
+  border-radius: 8px;
+}
+
 .datepicker__day.is-selected div {
   background-color: transparent;
   color: #A9BD0F;

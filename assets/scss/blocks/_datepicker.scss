@@ -1,3 +1,7 @@
+.datepicker__wrapper {
+    border-radius: 8px;
+}
+
 .datepicker__day.is-selected div {
     background-color: transparent;
     color: $text-hover-color;
