@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./assets/js/libs/styler/jquery.formstyler.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
     <link href="./assets/js/libs/datepicker/css/datepicker.minimal.css" rel="stylesheet" />
+    <link href="./assets/js/libs/nativejs-select/nativejs-select.css" rel="stylesheet" />    
     <link href="./assets/css/main.css" rel="stylesheet" />
     
     <link rel="icon" sizes="16x16" type="image/x-icon" href="./assets/images/favicon.ico">    
@@ -264,7 +264,7 @@
                             <label class="form__label">Slect</label>
                         </div>
                         <div class="form_col60">
-                            <select name="select" class="js-select">
+                            <select name="select" class="form__custom-select" data-placeholder="Select month:">
                                 <option value="1">item 1</option>
                                 <option value="1">item 2</option>
                                 <option value="1">item 3</option>
@@ -279,7 +279,7 @@
                             <label class="form__label">Slect error</label>
                         </div>
                         <div class="form_col60">
-                            <select name="select" class="js-select js-select_error">
+                            <select name="select" class="form__custom-select nativejs-select_error">
                                 <option value="1">item 1</option>
                                 <option value="1">item 2</option>
                                 <option value="1">item 3</option>
@@ -294,7 +294,7 @@
                             <label class="form__label">Slect disabled</label>
                         </div>
                         <div class="form_col60">
-                            <select name="select" class="js-select" disabled>
+                            <select name="select" class="form__custom-select" disabled>
                                 <option value="1">item 1</option>
                                 <option value="1">item 2</option>
                                 <option value="1">item 3</option>
@@ -352,6 +352,7 @@
 
                 </form>
             </section>
+
             <section class="content-section">
                 <h2 class="header-text header-text_h2">Accordeon</h2>
 
@@ -519,10 +520,9 @@
         <div class="notification_text"></div>Sorry! The service is not available now. Please try again later.
     </div>
     </div>
-
-    <script src="./assets/js/libs/jquery.min.js"></script>
-    <script src="./assets/js/libs/styler/jquery.formstyler.min.js"></script>
+    
     <script src="./assets/js/libs/datepicker/datepicker.js"></script>
+    <script src="./assets/js/libs/nativejs-select/nativejs-select.min.js"></script>
     <script src="./assets/js/main.js"></script>
 </body>
 

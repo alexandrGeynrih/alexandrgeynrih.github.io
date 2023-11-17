@@ -180,31 +180,40 @@ accordeons.forEach((item) => {
 const notificationBtn = document.querySelectorAll('[data-show-notification]');
 notificationBtn.forEach((item) => {
     item.addEventListener("click", function (event) {
-        const id = this.dataset.showNotification.replace('#', '');        
-        if(document.getElementById(id)){
+        const id = this.dataset.showNotification.replace('#', '');
+        if (document.getElementById(id)) {
             document.getElementById(id).classList.add('notification_active');
-        }        
+        }
     });
 });
 
 const notificationCloseBtn = document.querySelectorAll('.notification_close');
 notificationCloseBtn.forEach((item) => {
     item.addEventListener("click", function (event) {
-       this.closest(".notification_active").classList.remove('notification_active');
-        
+        this.closest(".notification_active").classList.remove('notification_active');
+
     });
 });
 
-
+//Calendar
 const datepickers = document.querySelectorAll('.form__datepicker');
 datepickers.forEach((item) => {
-    const datepicker = new Datepicker(item);    
+    const datepicker = new Datepicker(item);
 });
 
 
+// Select
+new NativejsSelect({
+    selector: '.form__custom-select',
+});
 
-if ($(".js-select").length) {
-    $(".js-select").styler({
-        selectSmartPositioning: false,
-    });
-}
+const select = document.querySelectorAll('.form__custom-select');
+document.addEventListener("click", function (event) {
+    if (event.target.classList.contains('nativejs-select') || event.target.closest('.nativejs-select')) {
+        const nativejs = event.target.classList.contains('nativejs-select') ? event.target : event.target.closest('.nativejs-select');
+        if (nativejs.previousElementSibling.tagName.toLowerCase() == 'select' && nativejs.previousElementSibling.disabled) {
+            nativejs.classList.remove('nativejs-select_active');
+            event.stopPropagation();
+        }
+    }
+});

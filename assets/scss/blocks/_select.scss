@@ -1,0 +1,62 @@
+.nativejs-select {
+    max-width: 318px;
+    vertical-align: middle;
+    border: none;
+    margin: 0;
+    border-radius: 8px;
+    width: 100%;
+}
+
+.nativejs-select__placeholder {
+    background-color: transparent;
+    border: 1px solid $border-color;
+    border-radius: 8px;
+    padding: 10px 15px;
+}
+
+.nativejs-select__placeholder:after {
+    display: block;
+    width: 10px;
+    height: 6px;
+    border: none;
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAGCAYAAAD68A/GAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACOSURBVHgBdY+9DcMgEIXvSJOSAQBllXQps0GUMmUm8ArZIB7BG3gUI7GABTXgd5aRLEt+0hM/38dJsHNuIkQpdfcI7XJDSinjymutHl0vBByljc2Ms845/8GezOxlsohNwrZPKX25TbDW9lhe6IwHBEmLFEJ4C780McY4aC2MHugV/UH60Fnwuc4Y0x3vF4+CQknRVLbSAAAAAElFTkSuQmCC') no-repeat center;
+}
+
+.nativejs-select_active .nativejs-select__dropdown {
+    border: 1px solid $border-color;
+    border-radius: 8px;
+    padding: 4px;
+    bottom: -8px;
+    background-color: #fff;
+}
+
+.nativejs-select__option {
+    color: $main-text-color;
+    background-color: #fff;
+    font-style: normal;
+    border-radius: 8px;
+    border: none;
+}
+
+.nativejs-select__option:hover {
+    background-color: #F3F4F1;
+    color: $main-text-color;
+    border: none;
+}
+
+.nativejs-select__placeholder {
+    color: $main-text-color;
+}
+
+.nativejs-select_active .nativejs-select__placeholder:after {
+    border: none;
+    transform: rotate(180deg) translateY(50%);
+}
+
+.nativejs-select_error+.nativejs-select .nativejs-select__placeholder {
+    border-color: #CF1D11 !important;
+}
+
+.form__custom-select:disabled + .nativejs-select .nativejs-select__placeholder:after {
+    opacity: .5;
+} 
