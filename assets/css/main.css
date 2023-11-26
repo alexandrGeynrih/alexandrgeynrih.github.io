@@ -127,6 +127,62 @@ body {
   margin-top: 48px;
 }
 
+.btn {
+  border: 1px solid #B8CE10;
+  border-radius: 8px;
+  padding: 7px 23.5px;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.5rem;
+  color: #1D1D1D;
+  position: relative;
+  vertical-align: middle;
+  overflow: hidden;
+  cursor: pointer;
+  z-index: 1;
+}
+.btn:hover {
+  color: #1D1D1D;
+}
+.btn::after {
+  content: "";
+  background-color: #F3F4F1;
+  inset: 0;
+  position: absolute;
+  z-index: -1;
+  transform-origin: left;
+  transform: scaleX(0);
+  transition: transform 0.5s ease-in-out;
+}
+.btn:hover:after {
+  transform: scaleX(1);
+  transform-origin: right;
+}
+.btn_active {
+  color: #fff;
+}
+.btn_active::after {
+  background-color: #A9BD0F;
+}
+.btn_active::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  background-color: #B8CE10;
+  z-index: -2;
+  left: 0px;
+  top: 0px;
+  height: 100%;
+}
+.btn_active:hover {
+  color: #fff;
+}
+.btn + .btn {
+  margin-left: 14px;
+}
+
 .text {
   padding-top: 48px;
   color: #6A6B61;
@@ -600,172 +656,6 @@ a:hover {
   }
 }
 
-.btn {
-  border: 1px solid #B8CE10;
-  border-radius: 8px;
-  padding: 7px 23.5px;
-  display: inline-block;
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 1.5rem;
-  color: #1D1D1D;
-  position: relative;
-  vertical-align: middle;
-  overflow: hidden;
-  cursor: pointer;
-  /*&::before{
-      content: '';
-      position: absolute;
-      display: block;
-      width: 88%;
-      height: 100%;
-      left: 0px;
-      top: 0px;
-
-      border-top-left-radius: 8px;
-      border-bottom-left-radius: 8px;
-
-      border-left: 1px solid $color-1;
-      border-top: 1px solid $color-1;
-      border-bottom: 1px solid $color-1;
-
-  }
-
-  &::after{
-      content: '';
-      position: absolute;
-      display: block;
-      width: 15%;
-      height: 100%;
-      right: 0px;
-      bottom: 0px;
-
-      border-top-right-radius: 8px;
-      border-bottom-right-radius: 8px;
-
-      border-right: 1px solid $color-1;
-      border-top: 1px solid $color-1;
-      border-bottom: 1px solid $color-1;        
-  }
-
-  &:hover::after{
-      height: 66%;
-      border-top: none;
-      border-top-right-radius: 5px;
-  }
-  */
-  /*
-  .btn__tangle
-  {
-      display: none;
-      position: absolute;
-      z-index: 1;
-      width: 12%;
-      height: 50px;
-      top: -6px;
-      right: -1px;
-      transform: rotate(-45deg);
-      border-right: 1px solid #b8ce10;
-  }
-
-  &:hover .btn__tangle {
-      display: block;
-  }
-  */
-  /*
-  &:hover {
-      border-top-color: transparent;
-      border-right-color: transparent;
-  }
-
-  &:not(&_active):after {
-      content: "";
-      position: absolute;
-      display: none;
-      bottom: -1px;
-      right: -1px;
-      width: 10px;
-      height: 66%;
-      border-right: 1px solid #B8CE10;
-      border-bottom-right-radius: 8px;
-  }
-
-  &:not(&_active):before {
-      content: "";
-      position: absolute;
-      display: none;
-      top: -1px;
-      left: 0px;
-      width: 90%;
-      height: 100%;
-      border-top: 1px solid #B8CE10;
-      border-top-left-radius: 8px;
-  }
-
-  &:not(&_active):hover:after,
-  &:not(&_active):hover:before {
-      display: block;
-  }*/
-}
-.btn:hover {
-  color: #1D1D1D;
-}
-.btn_active {
-  border: none;
-  color: #fff;
-  padding: 8px 24.5px;
-  border: 0px;
-  overflow: hidden;
-  background-color: #B8CE10;
-  /* &:hover {
-       background: none;
-   }
-
-   &:hover::after {
-       transform: rotate(45deg);
-       top: 5px;
-   }
-
-   &:after {
-       content: "";            
-       position: absolute;
-       width: 1100%;
-       height: 1100%;
-       top: 0px;
-       right: -500%;
-       transform-origin: 54% 0;
-       background-color: $color-1;
-       z-index: -2;
-       border: 1px solid $color-1;
-   }
-
-   &:hover::after {
-       background-color: #A9BD0F;
-   }*/
-}
-.btn_active:hover {
-  color: #fff;
-}
-.btn + .btn {
-  margin-left: 14px;
-}
-
-/*
-
-.btn-tangle {
-    position: absolute;
-    display: none;
-    width: 20px;
-    height: 1px;
-    background-color: #B8CE10;
-    transform: rotate(45deg);
-    top: 6px;
-    right: -3px;
-}
-
-.btn:hover .btn-tangle {
-    display: block;
-}*/
 .header-menu {
   display: flex;
   flex-direction: row;

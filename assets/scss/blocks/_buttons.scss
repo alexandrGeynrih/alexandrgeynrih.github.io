@@ -11,163 +11,55 @@
     vertical-align: middle;
     overflow: hidden;
     cursor: pointer;
-
-    &:hover {
-        color: $main-text-color;
+    z-index: 1;
+    
+    &:hover{
+        color: $main-text-color;                
     }
 
-    /*&::before{
-        content: '';
+    &::after {
+        content: "";
+        background-color: #F3F4F1;
+        inset: 0;
         position: absolute;
-        display: block;
-        width: 88%;
-        height: 100%;
-        left: 0px;
-        top: 0px;
-                
-        border-top-left-radius: 8px;
-        border-bottom-left-radius: 8px;
-        
-        border-left: 1px solid $color-1;
-        border-top: 1px solid $color-1;
-        border-bottom: 1px solid $color-1;
-        
-    }
-   
-    &::after{
-        content: '';
-        position: absolute;
-        display: block;
-        width: 15%;
-        height: 100%;
-        right: 0px;
-        bottom: 0px;
-                
-        border-top-right-radius: 8px;
-        border-bottom-right-radius: 8px;
-        
-        border-right: 1px solid $color-1;
-        border-top: 1px solid $color-1;
-        border-bottom: 1px solid $color-1;        
-    }
+        z-index: -1;
+        transform-origin: left;
+        transform: scaleX(0);
+        transition: transform 0.5s ease-in-out;
+      }
 
-    &:hover::after{
-        height: 66%;
-        border-top: none;
-        border-top-right-radius: 5px;
+    &:hover:after{
+        transform: scaleX(1);
+        transform-origin: right;
     }
-    */
-    &_active {
-        border: none;
+ 
+    
+    &_active {        
         color: #fff;
-        padding: 8px 24.5px;
-        border: 0px;
-        overflow: hidden;
-        background-color: $color-1;
 
-        &:hover {
-            color: #fff;
+        &::after {
+           background-color: $text-hover-color;
         }
 
-       /* &:hover {
-            background: none;
-        }
-
-        &:hover::after {
-            transform: rotate(45deg);
-            top: 5px;
-        }
-
-        &:after {
-            content: "";            
+        &::before{
+            content: '';
             position: absolute;
-            width: 1100%;
-            height: 1100%;
-            top: 0px;
-            right: -500%;
-            transform-origin: 54% 0;
+            display: block;
+            width: 100%;
             background-color: $color-1;
             z-index: -2;
-            border: 1px solid $color-1;
+            left: 0px;  
+            top: 0px;
+            height: 100%;
         }
 
-        &:hover::after {
-            background-color: #A9BD0F;
-        }*/
+        &:hover{
+            color: #fff;
+        }
     }
-
-    /*
-.btn__tangle
-{
-    display: none;
-    position: absolute;
-    z-index: 1;
-    width: 12%;
-    height: 50px;
-    top: -6px;
-    right: -1px;
-    transform: rotate(-45deg);
-    border-right: 1px solid #b8ce10;
-}
-
-&:hover .btn__tangle {
-    display: block;
-}
-*/
-
 
     &+& {
         margin-left: 14px;
-    }
-    /*
-    &:hover {
-        border-top-color: transparent;
-        border-right-color: transparent;
-    }
-
-    &:not(&_active):after {
-        content: "";
-        position: absolute;
-        display: none;
-        bottom: -1px;
-        right: -1px;
-        width: 10px;
-        height: 66%;
-        border-right: 1px solid #B8CE10;
-        border-bottom-right-radius: 8px;
-    }
-
-    &:not(&_active):before {
-        content: "";
-        position: absolute;
-        display: none;
-        top: -1px;
-        left: 0px;
-        width: 90%;
-        height: 100%;
-        border-top: 1px solid #B8CE10;
-        border-top-left-radius: 8px;
-    }
-
-    &:not(&_active):hover:after,
-    &:not(&_active):hover:before {
-        display: block;
-    }*/
+    }   
 
 }
-/*
-
-.btn-tangle {
-    position: absolute;
-    display: none;
-    width: 20px;
-    height: 1px;
-    background-color: #B8CE10;
-    transform: rotate(45deg);
-    top: 6px;
-    right: -3px;
-}
-
-.btn:hover .btn-tangle {
-    display: block;
-}*/
