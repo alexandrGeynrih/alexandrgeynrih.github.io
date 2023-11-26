@@ -217,3 +217,11 @@ document.addEventListener("click", function (event) {
         }
     }
 });
+
+
+window.addEventListener('resize', () => {
+    // For the rare legacy browsers that don't support it
+    if (!window.visualViewport) {
+      return
+    }    
+  })
