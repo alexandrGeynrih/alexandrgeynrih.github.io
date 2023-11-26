@@ -1585,6 +1585,9 @@ a:hover {
   .burger-menu__search-form::before {
     display: none;
   }
+  .burger-menu__search-input {
+    font-size: 16px !important;
+  }
 }
 .loader {
   position: fixed;
