@@ -1572,7 +1572,7 @@ a:hover {
 .burger-menu_active-search .login {
     width: 0px;
     height: 0px;
-    visibility: hidden;
+    display: none;
   }
   .burger-menu__search-line {
     width: 85px;
