@@ -17,6 +17,9 @@ searchLineClose.forEach((item) => {
     item.addEventListener("click", function (event) {
         event.stopPropagation();
         this.closest(".search-line").classList.remove('search-line__active');
+        if (this.closest(".burger-menu__additional-container")) {
+            this.closest(".burger-menu__additional-container").classList.remove('burger-menu_active-search');
+        }        
     });
 });
 
@@ -217,11 +220,3 @@ document.addEventListener("click", function (event) {
         }
     }
 });
-
-
-window.addEventListener('resize', () => {
-    // For the rare legacy browsers that don't support it
-    if (!window.visualViewport) {
-      return
-    }    
-  })
